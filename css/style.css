@@ -573,6 +573,272 @@ h2 {
   animation-delay: .5s; 
 } 
 
+/* === flat white === */
+
+.fw-cup-top1-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 20px 20px 0px 20px;
+  width: 220px;
+  height: 80px;
+  -webkit-border-top-right-radius: 35px;
+  -webkit-border-top-left-radius: 35px;    
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  position: relative;
+}
+
+.fw-cup-top1-anime::before {
+  content: '';
+  position: absolute;
+    background-color:none;
+    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
+    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
+    background-size: 20px 20px;
+    background-position: 0 0, 30px 30px; 
+  width: 100%;
+  bottom: 0; 
+  animation: brew3 1.5s linear forwards;
+  animation-delay: 3.5s; 
+}
+
+.fw-cup-mid1-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 0px 20px;
+  width: 220px;
+  height: 80px;
+  position: relative;
+}
+
+.fw-cup-mid1-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(255,254,235,1.0);
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: 2s; 
+}
+
+.fw-cup-bottom1-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 20px 20px;
+  width: 220px;
+  height: 80px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-top-left-radius: 0px;    
+  -webkit-border-bottom-right-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fw-cup-bottom1-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(40,23,0,1.0); /* espresso color */
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: .5s; 
+} 
+
+/* === americano === */
+
+
+.amer-cup-mid1-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 0px 20px;
+  width: 220px;
+  height: 120px;
+  position: relative;
+}
+
+.amer-cup-mid1-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(64,164,223,0.2);  
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: 2s; 
+}
+
+.amer-cup-bottom-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 20px 20px;
+  width: 220px;
+  height: 60px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-top-left-radius: 0px;    
+  -webkit-border-bottom-right-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.amer-cup-bottom-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(40,23,0,1.0); /* espresso color */
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: .5s; 
+} 
+
+/* === red eye === */
+
+
+.re-cup-mid1-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 0px 20px;
+  width: 220px;
+  height: 120px;
+  position: relative;
+}
+
+.re-cup-mid1-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(56,32,1,1.0);  
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: 2s; 
+}
+
+.re-cup-bottom-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 20px 20px;
+  width: 220px;
+  height: 60px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-top-left-radius: 0px;    
+  -webkit-border-bottom-right-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.re-cup-bottom-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(40,23,0,1.0); /* espresso color */
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: .5s; 
+} 
+
+
+/* === macchiato === */
+
+
+.mac-cup-mid-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 0px 20px;
+  width: 220px;
+  height: 120px;
+  position: relative;
+}
+
+.mac-cup-mid-anime::before {
+content: '';
+  position: absolute;
+    background-color:none;
+    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
+    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
+    background-size: 20px 20px;
+    background-position: 0 0, 30px 30px; 
+  width: 100%;
+  bottom: 0; 
+  animation: brew3 1.5s linear forwards;
+  animation-delay: 2s; 
+}
+
+.mac-cup-bottom-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 20px 20px;
+  width: 220px;
+  height: 60px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-top-left-radius: 0px;    
+  -webkit-border-bottom-right-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mac-cup-bottom-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(40,23,0,1.0); /* espresso color */
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: .5s; 
+} 
+
+/* === cortado === */
+
+
+.cor-cup-mid-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 0px 20px;
+  width: 220px;
+  height: 60px;
+  position: relative;
+}
+
+.cor-cup-mid-anime::before {
+content: '';
+  position: absolute;
+    background-color:none;
+    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
+    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
+    background-size: 20px 20px;
+    background-position: 0 0, 30px 30px; 
+  width: 100%;
+  bottom: 0; 
+  animation: brew2 1.5s linear forwards;
+  animation-delay: 2s; 
+}
+
+.cor-cup-bottom-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 20px 20px;
+  width: 220px;
+  height: 60px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-top-left-radius: 0px;    
+  -webkit-border-bottom-right-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cor-cup-bottom-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(40,23,0,1.0); /* espresso color */
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: .5s; 
+} 
+
+
 /* === */
 
 .cup-top-anime::before {
@@ -637,6 +903,26 @@ h2 {
 
   100% {
     height: 100%;  
+  }
+}
+
+@keyframes brew2 {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 85%;  
+  }
+}
+
+@keyframes brew3 {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 25%;  
   }
 }
 
