@@ -222,7 +222,16 @@ h2 {
 
 /* ==== Modal ==== */
 
-#modal-container {
+#modal-espresso, 
+#modal-espresso, 
+#modal-cappucino, 
+#modal-cafe-latte, 
+#modal-flat-white, 
+#modal-americano,
+#modal-red-eye, 
+#modal-macchiato,
+#modal-cortado, 
+#modal-mocha {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -239,7 +248,7 @@ h2 {
   display: block; 
 }
 
-.modal-espresso-content {
+.modal-content {
   background-color: #fefefe;
   margin: 5% auto; /* 5% from the top and centered */
   padding: 20px;
@@ -253,6 +262,15 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.animation{
+    width: 50%;
+}
+
+.desc {
+    width: 50%;
+
 }
 
 .modal-close {

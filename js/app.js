@@ -13,21 +13,21 @@ $("section").hover(function() {
 // ==== Modal ====
 
 $("#coffee-cup").click(function() { 	
-	$("#modal-container").show("#modal-show");
+	$("#modal-espresso").show("#modal-show");
 });
 
 
 $(".modal-close").click(function(event) {
-	$("#modal-container").hide("#modal-show");
+	$("#modal-espresso").hide("#modal-show");
 });
 
 
 
 /* closes modal on background click
 
-$("#modal-container	").click(function(event) {
+$("#modal-espresso").click(function(event) {
   
-     $("#modal-container").hide();
+     $("#modal-espresso").hide();
       
 });
 
