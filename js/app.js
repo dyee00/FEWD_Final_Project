@@ -1,10 +1,18 @@
 console.log("JS file works!");
 
+// Hover cursor state
+
+$("section").hover(function() {
+    $(this).css('cursor','pointer');
+},  function() {
+    $(this).css('cursor','auto');  
+});
+
+
 
 // ==== Modal ====
 
-
-$("#espresso").click(function() { 	
+$("#coffee-cup").click(function() { 	
 	$("#modal-container").show("#modal-show");
 });
 
@@ -13,6 +21,15 @@ $(".modal-close").click(function(event) {
 	$("#modal-container").hide("#modal-show");
 });
 
+
+
+/* closes modal on background click
+
+$("#modal-container	").click(function(event) {
+  
+     $("#modal-container").hide();
+      
+});
 
 
 /*
