@@ -259,7 +259,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   padding: 3%;
 }
@@ -279,11 +279,11 @@ h2 {
 }
 
 .animation {
-  width: 40%;
   display: flex;
   flex-direction: column;
   position: relative;
   width: 330px;
+  padding-top: 8%;
   margin: 2% 2% 2% 2%;
 }
 
@@ -295,7 +295,6 @@ h2 {
   width: 100%;
 }
 
-/*
 
 /* ==== cup for animation ==== */ 
 
@@ -395,8 +394,186 @@ h2 {
 }
 
 
-/* ========= animation ========= */
+/* ========= ANIMATION ========= */
 
+/* === espresso === */
+
+.esp-cup-bottom-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 20px 20px;
+  width: 220px;
+  height: 60px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-top-left-radius: 0px;    
+  -webkit-border-bottom-right-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.esp-cup-bottom-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(40,23,0,1.0); /* espresso color */
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: .5s; 
+} 
+
+
+/* === cappuccino === */
+
+.cap-cup-top1-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 20px 20px 0px 20px;
+  width: 220px;
+  height: 80px;
+  -webkit-border-top-right-radius: 35px;
+  -webkit-border-top-left-radius: 35px;    
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  position: relative;
+}
+
+.cap-cup-top1-anime::before {
+  content: '';
+  position: absolute;
+    background-color:none;
+    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
+    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
+    background-size: 20px 20px;
+    background-position: 0 0, 30px 30px; 
+  width: 100%;
+  bottom: 0; 
+  animation: brew2 1.5s linear forwards;
+  animation-delay: 3.5s; 
+}
+
+.cap-cup-mid1-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 0px 20px;
+  width: 220px;
+  height: 80px;
+  position: relative;
+}
+
+.cap-cup-mid1-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(255,254,235,1.0);
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: 2s; 
+}
+
+.cap-cup-bottom1-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 20px 20px;
+  width: 220px;
+  height: 80px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-top-left-radius: 0px;    
+  -webkit-border-bottom-right-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cap-cup-bottom1-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(40,23,0,1.0); /* espresso color */
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: .5s; 
+} 
+
+/* === cafe latte === */
+
+.latte-cup-top-anime {
+    border-style: solid;
+    border-color: black;
+    border-width: 20px 20px 0px 20px;
+    width: 220px;
+    height: 60px;
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.latte-cup-top-anime::before {
+  content: '';
+  position: absolute;
+    background-color:none;
+    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
+    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
+    background-size: 20px 20px;
+    background-position: 0 0, 30px 30px; 
+  width: 100%;
+  bottom: 0; 
+  animation: brew2 1.5s linear forwards;
+  animation-delay: 3.5s; 
+}
+
+.latte-cup-mid-anime {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 20px 0px 20px;
+    width: 220px;
+    height: 120px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.latte-cup-mid-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(255,254,235,1.0);/* milk */
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: 2s; 
+}
+
+.latte-cup-bottom-anime {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 20px 20px 20px;
+  width: 220px;
+  height: 80px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-top-left-radius: 0px;    
+  -webkit-border-bottom-right-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.latte-cup-bottom-anime::before {
+  content: '';
+  position: absolute;
+  background: rgba(40,23,0,1.0); /* espresso color */
+  width: 100%;
+  bottom: 0; 
+  animation: brew 1.5s linear forwards;
+  animation-delay: .5s; 
+} 
+
+/* === */
 
 .cup-top-anime::before {
   content: '';
@@ -463,13 +640,13 @@ h2 {
   }
 }
 
-@keyframes brew-half {
+@keyframes brew2 {
   0% {
     height: 0%;
   }
 
   100% {
-    height: 50%;  
+    height: 85%;  
   }
 }
 
