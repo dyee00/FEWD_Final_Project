@@ -1,14 +1,5 @@
 console.log("JS file works!");
 
-// Hover cursor state
-
-$("section").hover(function() {
-    $(this).css('cursor','pointer');
-},  function() {
-    $(this).css('cursor','auto');  
-});
-
-
 
 // ==== Modal ====
 
@@ -93,10 +84,12 @@ $(".modal-close").click(function(event) {
 
 /* closes modal on background click
 
-$("#modal-espresso").click(function(event) {
-  
-     $("#modal-espresso").hide();
-      
+$("#modal-container").click(function(event) {
+  	event.preventDefault();
+
+    $("#modal-container").hide();
+   
 });
+
 */
 
