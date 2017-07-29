@@ -83,7 +83,7 @@ $(".modal-close").click(function(event) {
 // ==== Button - pervious/next ====
 
 var pageIndex = 1;
-showPages(pageIndex);
+hidePages(pageIndex);
 
 function plusSlides(n) {
   showPages(pageIndex += n);
@@ -104,25 +104,6 @@ function showPages(n) {
 }
 
 
-/*
-
-var pages = ["#modal-espresso", 
-"#modal-cappuccino", 
-"#modal-cafe-latte", 
-"#modal-flat-white", 
-"#modal-americano",
-"#modal-red-eye", 
-"#modal-macchiato",
-"#modal-cortado", 
-"#modal-mocha"];
-
-$(".next").on ("click", function() {
-	for(i=0; pages.length > i; i++);
-
-
-});
-
-*/
 
 
 /* closes modal on background click 
