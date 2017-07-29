@@ -80,14 +80,43 @@ $(".modal-close").click(function(event) {
 });
 
 
+// ==== Button - pervious/next ====
+
+var pages = function () {
+	
+
+	
+};
 
 
-/* closes modal on background click
 
-$("#modal-container").click(function(event) {
+/*
+
+var pages = ["#modal-espresso", 
+"#modal-cappuccino", 
+"#modal-cafe-latte", 
+"#modal-flat-white", 
+"#modal-americano",
+"#modal-red-eye", 
+"#modal-macchiato",
+"#modal-cortado", 
+"#modal-mocha"];
+
+$(".next").on ("click", function() {
+	for(i=0; pages.length > i; i++);
+
+
+});
+
+*/
+
+
+/* closes modal on background click 
+
+$("#modal-espresso").click(function(event) {
   	event.preventDefault();
 
-    $("#modal-container").hide();
+    $("#modal-espresso").hide();
    
 });
 
