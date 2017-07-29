@@ -82,12 +82,26 @@ $(".modal-close").click(function(event) {
 
 // ==== Button - pervious/next ====
 
-var pages = function () {
-	
+var pageIndex = 1;
+showPages(pageIndex);
 
-	
-};
+function plusSlides(n) {
+  showPages(pageIndex += n);
+}
 
+function showPages(n) {
+  var i;
+  var pages = document.getElementsByClassName("page");
+
+  if (n > pages.length) {pageIndex = 1}    
+  if (n < 1) {pageIndex = pages.length}
+  for (i = 0; i < pages.length; i++) {
+      pages[i].style.display = "none";  
+  }
+
+  pages[pageIndex-1].style.display = "block";  
+
+}
 
 
 /*
