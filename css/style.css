@@ -638,7 +638,7 @@ h2 {
     background-position: 0 0, 30px 30px; 
   width: 100%;
   bottom: 0; 
-  animation: brew3 1.5s linear forwards;
+  animation: brew3 .5s linear forwards;
   animation-delay: 3.5s; 
 }
 

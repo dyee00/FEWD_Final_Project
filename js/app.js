@@ -104,8 +104,6 @@ function showPages(n) {
 }
 
 
-
-
 /* closes modal on background click 
 
 $("#modal-espresso").click(function(event) {
@@ -114,7 +112,6 @@ $("#modal-espresso").click(function(event) {
     $("#modal-espresso").hide();
    
 });
-test 
 
 */
 
