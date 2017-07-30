@@ -108,17 +108,55 @@ function showPages(n) {
 }
 
 
-/* closes modal on background click 
+// ==== closes modal on background click ====
 
-$("#modal-container").click (function(event) {
- 	event.preventDefault();
+var esp = document.getElementById("modal-espresso");
+var cap = document.getElementById("modal-cappuccino");
+var cl = document.getElementById("modal-cafe-latte"); 
+var fl = document.getElementById("modal-flat-white"); 
+var amer = document.getElementById("modal-americano");
+var re = document.getElementById("modal-red-eye"); 
+var mac = document.getElementById("modal-macchiato");
+var cor = document.getElementById("modal-cortado"); 
+var moc = document.getElementById("modal-mocha");
 
-    $("#modal-container").hide("modal-content");
-    
+window.onclick = function(event) {
+    if (event.target == esp) {
+        esp.style.display = "none";
+    } else if (event.target == cap) {
+        cap.style.display = "none";
+    } else if(event.target == cl) {
+        cl.style.display = "none";
+    } else if (event.target == fl) {
+        fl.style.display = "none";
+    } else if (event.target == amer) {
+        amer.style.display = "none";
+    } else if (event.target == re) {
+        re.style.display = "none";
+    } else if (event.target == mac) {
+        mac.style.display = "none";
+    } else if (event.target == cor) {
+        cor.style.display = "none";
+    } else if (event.target == moc) {
+        moc.style.display = "none";
+    }
+}
 
-});
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
