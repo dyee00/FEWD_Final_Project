@@ -22,6 +22,17 @@ h2 {
   font-weight: normal;
 } 
 
+p {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#ital {
+  font-style: italic;
+}
+
+
 .container {
   display: flex;
   flex-direction: row;
@@ -211,16 +222,24 @@ h2 {
 }
 
 .water-color {
-    background: rgba(64,164,223,0.2);  
+    background: rgba(64,164,223,0.23);  
 }
 
 .foam-color {
-    /* background: rgba(255,255,255,1.0); */
-    background-color:none;
+    /*  big polka dots
+    background-color: none;
     background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
     radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
     background-size: 20px 20px;
     background-position: 0 0, 30px 30px; 
+    */
+    background: /* small polka dots */
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: none;
+    background-size: 17px 17px;
 } 
 
 .cream-color {
@@ -228,7 +247,7 @@ h2 {
 }
 
 .chocolate-color {
-    background: rgba(88,56,41,1.0); 
+    background: rgba(88,56,41,1.0);
 }
 
 
@@ -476,19 +495,22 @@ h2 {
   -webkit-border-bottom-right-radius: 0px;
   -webkit-border-bottom-left-radius: 0px;
   position: relative;
+  overflow: hidden;
 }
 
 .cap-cup-top1-anime::before {
   content: '';
   position: absolute;
-    background-color:none;
-    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
-    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
-    background-size: 20px 20px;
-    background-position: 0 0, 30px 30px; 
+    background:
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: none;
+    background-size: 17px 17px;
   width: 100%;
   bottom: 0; 
-  animation: brew2 1.5s linear forwards;
+  animation: brew 1.5s linear forwards;
   animation-delay: 3.5s; 
 }
 
@@ -554,14 +576,16 @@ h2 {
 .latte-cup-top-anime::before {
   content: '';
   position: absolute;
-    background-color:none;
-    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
-    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
-    background-size: 20px 20px;
-    background-position: 0 0, 30px 30px; 
+    background:
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: none;
+    background-size: 17px 17px;
   width: 100%;
   bottom: 0; 
-  animation: brew2 1.5s linear forwards;
+  animation: brew 1.5s linear forwards;
   animation-delay: 3.5s; 
 }
 
@@ -626,16 +650,19 @@ h2 {
   -webkit-border-bottom-right-radius: 0px;
   -webkit-border-bottom-left-radius: 0px;
   position: relative;
+  overflow: hidden;
 }
 
 .fw-cup-top1-anime::before {
   content: '';
   position: absolute;
-    background-color:none;
-    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
-    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
-    background-size: 20px 20px;
-    background-position: 0 0, 30px 30px; 
+    background:
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: none;
+    background-size: 17px 17px; 
   width: 100%;
   bottom: 0; 
   animation: brew3 .5s linear forwards;
@@ -793,11 +820,13 @@ h2 {
 .mac-cup-mid-anime::before {
 content: '';
   position: absolute;
-    background-color:none;
-    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
-    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
-    background-size: 20px 20px;
-    background-position: 0 0, 30px 30px; 
+  background:
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: none;
+    background-size: 17px 17px;
   width: 100%;
   bottom: 0; 
   animation: brew3 1.5s linear forwards;
@@ -843,11 +872,13 @@ content: '';
 .cor-cup-mid-anime::before {
 content: '';
   position: absolute;
-    background-color:none;
-    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
-    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
-    background-size: 20px 20px;
-    background-position: 0 0, 30px 30px; 
+    background:
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: none;
+    background-size: 17px 17px; 
   width: 100%;
   bottom: 0; 
   animation: brew2 1.5s linear forwards;
@@ -891,19 +922,22 @@ content: '';
   -webkit-border-bottom-right-radius: 0px;
   -webkit-border-bottom-left-radius: 0px;
   position: relative;
+  overflow: hidden;
 }
 
 .moc-cup-top-anime::before {
   content: '';
   position: absolute;
-    background-color:none;
-    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
-    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
-    background-size: 20px 20px;
-    background-position: 0 0, 30px 30px; 
+    background:
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: none;
+    background-size: 17px 17px; 
   width: 100%;
   bottom: 0; 
-  animation: brew4 1s linear forwards;
+  animation: brew 1s linear forwards;
   animation-delay: 5s; 
 }
 
@@ -948,11 +982,13 @@ content: '';
 .moc-cup-mid-anime::before {
   content: '';
   position: absolute;
-    background-color:none;
-    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
-    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
-    background-size: 20px 20px;
-    background-position: 0 0, 30px 30px; 
+    background:
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: none;
+    background-size: 17px 17px;
   width: 100%;
   bottom: 0; 
   animation: brew2 1.5s linear forwards;
@@ -962,11 +998,13 @@ content: '';
 .moc-cup-mid-anime::before {
 content: '';
   position: absolute;
-    background-color:none;
-    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
-    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
-    background-size: 20px 20px;
-    background-position: 0 0, 30px 30px; 
+    background:
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: none;
+    background-size: 17px 17px;
   width: 100%;
   bottom: 0; 
   animation: brew2 1.5s linear forwards;
@@ -1038,12 +1076,9 @@ content: '';
   }
 }
 
-@keyframes brew4 {
-  0% {
-    height: 0%;
-  }
 
-  100% {
-    height: 60%;  
-  }
-}
+
+
+
+
+
