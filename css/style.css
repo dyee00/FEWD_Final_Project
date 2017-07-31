@@ -70,7 +70,7 @@ p {
 } 
 
 
-/* ==== Cup ==== */
+/* ==== Cup  ==== */
 
 #coffee-cup, 
 #espresso, 
@@ -91,7 +91,61 @@ p {
   cursor: pointer;
 } 
 
+/* === Cup - total size: w:220px, h:240px ; === */
+
 .cup-top {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px 15px 0px 15px;
+    width: 220px; 
+    height: 80px; 
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+}
+
+.cup-mid {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 80px;
+    position: relative;
+}
+
+.cup-bottom {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 15px 15px;
+    width: 220px;
+    height: 80px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
+    position: relative;
+}
+
+/* === cup extra sizes === */
+
+/* top */
+
+.cup-top-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+}
+
+.cup-top-md {
     border-style: solid;
     border-color: black;
     border-width: 15px 15px 0px 15px;
@@ -104,112 +158,98 @@ p {
     position: relative;
 }
 
-.cup-top-mid {
+.cup-top-lg {
     border-style: solid;
     border-color: black;
     border-width: 15px 15px 0px 15px;
+    width: 220px; 
+    height: 90px; 
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
     -webkit-border-bottom-right-radius: 0px;
     -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+}
+
+/* Mid */
+
+.cup-mid-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    position: relative;
+}
+
+.cup-mid-md {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 60px;
+    position: relative;
+}
+
+.cup-mid-lg {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 90px;
+    position: relative;
+}
+
+.cup-mid-xlg {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 120px;
     position: relative;
 }
 
-.cup-mid {
-    border-style: solid;
-    border-color: black;
-    border-width: 0px 15px 0px 15px;
-    width: 220px;
-    height: 60px;
-    position: relative;
-}
+/* Bottom */
 
-.cup-bottom {
+.cup-bottom-sm {
     border-style: solid;
     border-color: black;
     border-width: 0px 15px 15px 15px;
     width: 220px;
-    height: 60px;
-    -webkit-border-top-right-radius: 0px;
-    -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 300px;
-    -webkit-border-bottom-left-radius: 300px;
-    position: relative;
-}
-
-.cup-top-small {
-    border-style: solid;
-    border-color: black;
-    border-width: 15px 15px 0px 15px;
-    width: 220px;
     height: 30px;
-    -webkit-border-top-right-radius: 35px;
-    -webkit-border-top-left-radius: 35px;    
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    position: relative;
-}
-
-.cup-mid-small {
-    border-style: solid;
-    border-color: black;
-    border-width: 0px 15px 0px 15px;
-    width: 220px;
-    height: 30px;
-    position: relative;
-}
-
-
-.cup-top1 {
-    border-style: solid;
-    border-color: black;
-    border-width: 15px 15px 0px 15px;
-    width: 220px;
-    height: 80px;
-    -webkit-border-top-right-radius: 35px;
-    -webkit-border-top-left-radius: 35px;    
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    position: relative;
-}
-
-
-.cup-mid1 {
-    border-style: solid;
-    border-color: black;
-    border-width: 0px 15px 0px 15px;
-    width: 220px;
-    height: 80px;
-    position: relative;
-}
-
-.cup-bottom1 {
-    border-style: solid;
-    border-color: black;
-    border-width: 0px 15px 15px 15px;
-    width: 220px;
-    height: 80px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
     -webkit-border-bottom-right-radius: 75px;
     -webkit-border-bottom-left-radius: 75px;
     position: relative;
-}    
+}
 
-.cup-bottom2 {
+.cup-bottom-md {
     border-style: solid;
     border-color: black;
     border-width: 0px 15px 15px 15px;
     width: 220px;
-    height: 120px;
+    height: 60px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 80px;
-    -webkit-border-bottom-left-radius: 80px;
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
     position: relative;
 }
+.cup-bottom-lg {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 15px 15px;
+    width: 220px;
+    height: 90px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
+    position: relative;
+}
+
+/* Handle */
 
 .cup-handle {
     position: absolute;
@@ -229,11 +269,11 @@ p {
 }
 
 .label {
-  font-family: Sanchez;
-  font-size: 1.5rem;
-  font-weight: normal;
-  text-align: center;
-  padding: 40px 74px 60px 70px;
+    font-family: Sanchez;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+    padding: 40px 74px 60px 70px;
 }
 
 /* ==== Espresso Ingredients ==== */
@@ -391,7 +431,7 @@ p {
     bottom: 140px;
     border-style: solid;
     border-color: black;
-    border-width: 15px 15px 15px 15px;
+    border-width: 15px 15px 15px 15px;   
     width: 57px;
     height: 75px;
     -webkit-border-top-left-radius: 30px;
@@ -404,6 +444,48 @@ p {
 
 
 /* === espresso === */
+
+.esp-cup-top-anime {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px 15px 0px 15px;
+    width: 220px;
+    height: 60px;
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.esp-cup-mid-anime  {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 60px; 
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.esp-cup-mid-anime {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 60px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;
+}
 
 .esp-cup-bottom-anime {
   border-style: solid;
@@ -489,8 +571,8 @@ p {
   height: 80px;
   -webkit-border-top-right-radius: 0px;
   -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 80px;
-  -webkit-border-bottom-left-radius: 80px;
+  -webkit-border-bottom-right-radius: 75px;
+  -webkit-border-bottom-left-radius: 75px;
   position: relative;
   overflow: hidden;
 }
@@ -512,7 +594,7 @@ p {
     border-color: black;
     border-width: 15px 15px 0px 15px;
     width: 220px;
-    height: 60px;
+    height: 30px;
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
     -webkit-border-bottom-right-radius: 0px;
@@ -644,8 +726,8 @@ p {
   height: 80px;
   -webkit-border-top-right-radius: 0px;
   -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 80px;
-  -webkit-border-bottom-left-radius: 80px;
+  -webkit-border-bottom-right-radius: 75px;
+  -webkit-border-bottom-left-radius: 75px;
   position: relative;
   overflow: hidden;
 }
@@ -967,8 +1049,8 @@ content: '';
   height: 120px;
   -webkit-border-top-right-radius: 0px;
   -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 80px;
-  -webkit-border-bottom-left-radius: 80px;
+  -webkit-border-bottom-right-radius: 75px;
+  -webkit-border-bottom-left-radius: 75px;
   position: relative;
   overflow: hidden;
 }
@@ -1024,160 +1106,21 @@ content: '';
   }
 }
 
-
-/* ====== RESPONSIVE phone ====== */
+/* ====== RESPONSIVE - Phone size ====== */
 
 @media screen 
   and (min-width: 300px)
   and (max-width: 750px) {
 
-body {
-  font-family: Sanchez, sans-serif;
-}
-
-header {
-  font-family: Sanchez, sans-serif;
-}
-
-#title {
-  font-family: Sanchez, sans-serif;
-  font-size: 4rem;
-} 
+}    
 
 
-#tagline {
-  font-family: Sanchez, sans-serif;
-  font-size: 2rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-} 
-
-#coffee-cup {
-  width: 70%;
-}
-
-.label {
-  font-family: Sanchez;
-  font-size: 1.5rem;
-  font-weight: normal;
-  text-align: center;
-  padding: 40px 74px 60px 70px;
-}
-
-/* ===== Responsive Modal ===== */
-
-.previous, .next {
-  top: 49%;
-  width: auto;
-}
-
-.modal-content {
-  background-color: #D7D1C9;
-  margin: 5% auto; /* 5% from the top and centered */
-  padding: 0px 20px 50px 20px;
-  border: 1px solid #888;
-  border-radius: 20px;
-  width: 70%; 
-  height: 0 auto;
-}
-
-.desc {
-  font-family: Sanchez;
-  width: 80%;
-  text-align: justify;
-}
-
-.desc h2 h3 {
-  font-family: Sanchez;
-  text-align: center;
-}
-
- };   
-
-/* ====== RESPONSIVE tablet ====== */
-
-@media screen 
-  and (min-width: 750px)
-  and (max-width: 1025px) {
-
-body {
-  font-family: Sanchez;
-}
-
-header {
-  font-family: Sanchez;
-}
-
-#title {
-  font-family: Sanchez;
-  font-size: 4rem;
-} 
 
 
-#tagline {
-  font-family: Sanchez;
-  font-size: 2rem;
-}
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-} 
 
-#coffee-cup {
-  width: 40%;
-}
 
-.label {
-  font-family: Sanchez;
-  font-size: 1.5rem;
-  font-weight: normal;
-  text-align: center;
-  padding: 40px 74px 60px 70px;
-}
 
-/* ===== Responsive Modal ===== */
-
-.previous, .next {
-  top: 49%;
-  width: auto;
-}
-
-.modal-content {
-  background-color: #D7D1C9;
-  margin: 5% auto; /* 5% from the top and centered */
-  padding: 0px 20px 50px 20px;
-  border: 1px solid #888;
-  border-radius: 20px;
-  width: 70%; 
-  height: 0 auto;
-}
-
-.desc {
-  font-family: Sanchez;
-  width: 80%;
-  text-align: justify;
-}
-
-.desc h2 h3 {
-  font-family: Sanchez;
-  text-align: center;
-}
-
- };   
 
 
 
