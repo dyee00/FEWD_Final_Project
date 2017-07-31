@@ -83,10 +83,10 @@ p {
 #cortado, 
 #mocha {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
-  /* width: 330px; */
-  width: 26%;
+  width: 330px; 
+  /* width: 26%;*/
   margin: 2% 2% 2% 2%;
   cursor: pointer;
 } 
@@ -1023,4 +1023,147 @@ content: '';
     height: 25%;  
   }
 }
+
+
+/* ====== RESPONSIVE phone ====== */
+
+@media screen 
+  and (min-width: 300px)
+  and (max-width: 750px) {
+
+body {
+  font-family: Sanchez, sans-serif;
+}
+
+header {
+  font-family: Sanchez, sans-serif;
+}
+
+#title {
+  font-family: Sanchez, sans-serif;
+  font-size: 4rem;
+} 
+
+
+#tagline {
+  font-family: Sanchez, sans-serif;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+} 
+
+#coffee-cup {
+  width: 70%;
+}
+
+/* ===== Responsive Modal ===== */
+
+.previous, .next {
+  top: 49%;
+  width: auto;
+}
+
+.modal-content {
+  background-color: #D7D1C9;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 0px 20px 50px 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 70%; 
+  height: 0 auto;
+}
+
+.desc {
+  font-family: Sanchez;
+  width: 80%;
+  text-align: justify;
+}
+
+.desc h2 h3 {
+  font-family: Sanchez;
+  text-align: center;
+}
+
+ };   
+
+/* ====== RESPONSIVE tablet ====== */
+
+@media screen 
+  and (min-width: 750px)
+  and (max-width: 1025px) {
+
+body {
+  font-family: Sanchez;
+}
+
+header {
+  font-family: Sanchez;
+}
+
+#title {
+  font-family: Sanchez;
+  font-size: 4rem;
+} 
+
+
+#tagline {
+  font-family: Sanchez;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+} 
+
+#coffee-cup {
+  width: 60%;
+}
+
+/* ===== Responsive Modal ===== */
+
+.previous, .next {
+  top: 49%;
+  width: auto;
+}
+
+.modal-content {
+  background-color: #D7D1C9;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 0px 20px 50px 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 70%; 
+  height: 0 auto;
+}
+
+.desc {
+  font-family: Sanchez;
+  width: 80%;
+  text-align: justify;
+}
+
+.desc h2 h3 {
+  font-family: Sanchez;
+  text-align: center;
+}
+
+ };   
+
+
+
+
 
