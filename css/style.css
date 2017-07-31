@@ -69,6 +69,9 @@ p {
   padding: 0% 0% 0% 5%;
 } 
 
+.desc ul li {
+  margin-left: -20px; 
+}
 
 /* ==== Cup  ==== */
 
@@ -104,6 +107,7 @@ p {
     -webkit-border-bottom-right-radius: 0px;
     -webkit-border-bottom-left-radius: 0px;
     position: relative;
+    overflow: hidden;
 }
 
 .cup-mid {
@@ -113,6 +117,7 @@ p {
     width: 220px;
     height: 80px;
     position: relative;
+    overflow: hidden;
 }
 
 .cup-bottom {
@@ -126,6 +131,7 @@ p {
     -webkit-border-bottom-right-radius: 75px;
     -webkit-border-bottom-left-radius: 75px;
     position: relative;
+    overflow: hidden;    
 }
 
 /* === cup extra sizes === */
@@ -143,6 +149,7 @@ p {
     -webkit-border-bottom-right-radius: 0px;
     -webkit-border-bottom-left-radius: 0px;
     position: relative;
+    overflow: hidden;    
 }
 
 .cup-top-md {
@@ -156,6 +163,7 @@ p {
     -webkit-border-bottom-right-radius: 0px;
     -webkit-border-bottom-left-radius: 0px;
     position: relative;
+    overflow: hidden;    
 }
 
 .cup-top-lg {
@@ -169,6 +177,7 @@ p {
     -webkit-border-bottom-right-radius: 0px;
     -webkit-border-bottom-left-radius: 0px;
     position: relative;
+    overflow: hidden;    
 }
 
 /* Mid */
@@ -180,6 +189,7 @@ p {
     width: 220px;
     height: 30px;
     position: relative;
+    overflow: hidden;    
 }
 
 .cup-mid-md {
@@ -189,6 +199,7 @@ p {
     width: 220px;
     height: 60px;
     position: relative;
+    overflow: hidden;    
 }
 
 .cup-mid-lg {
@@ -198,6 +209,7 @@ p {
     width: 220px;
     height: 90px;
     position: relative;
+    overflow: hidden;    
 }
 
 .cup-mid-xlg {
@@ -207,6 +219,7 @@ p {
     width: 220px;
     height: 120px;
     position: relative;
+    overflow: hidden;    
 }
 
 /* Bottom */
@@ -222,6 +235,7 @@ p {
     -webkit-border-bottom-right-radius: 75px;
     -webkit-border-bottom-left-radius: 75px;
     position: relative;
+    overflow: hidden;    
 }
 
 .cup-bottom-md {
@@ -235,6 +249,7 @@ p {
     -webkit-border-bottom-right-radius: 75px;
     -webkit-border-bottom-left-radius: 75px;
     position: relative;
+    overflow: hidden;    
 }
 .cup-bottom-lg {
     border-style: solid;
@@ -247,6 +262,7 @@ p {
     -webkit-border-bottom-right-radius: 75px;
     -webkit-border-bottom-left-radius: 75px;
     position: relative;
+    overflow: hidden;    
 }
 
 /* Handle */
@@ -445,93 +461,73 @@ p {
 
 /* === espresso === */
 
-.esp-cup-top-anime {
+.esp-cup-top {
     border-style: solid;
     border-color: black;
     border-width: 15px 15px 0px 15px;
-    width: 220px;
-    height: 60px;
+    width: 220px; 
+    height: 80px; 
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
     -webkit-border-bottom-right-radius: 0px;
     -webkit-border-bottom-left-radius: 0px;
     position: relative;
-    overflow: hidden;
 }
 
-.esp-cup-mid-anime  {
+.esp-cup-mid {
     border-style: solid;
     border-color: black;
     border-width: 0px 15px 0px 15px;
     width: 220px;
-    height: 60px; 
-    -webkit-border-top-right-radius: 0px;
-    -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
+    height: 80px;
     position: relative;
-    overflow: hidden;
 }
 
-.esp-cup-mid-anime {
+.esp-cup-bottom {
     border-style: solid;
     border-color: black;
-    border-width: 0px 15px 0px 15px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
-    height: 60px;
+    height: 80px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
     position: relative;
     overflow: hidden;
 }
 
-.esp-cup-bottom-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 15px 15px;
-  width: 220px;
-  height: 60px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 300px;
-  -webkit-border-bottom-left-radius: 300px;
-  position: relative;
-  overflow: hidden;
-}
-
-.esp-cup-bottom-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(40,23,0,1.0); /* espresso color */
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: .5s; 
+.esp-cup-bottom::before {
+    content: '';
+    position: absolute;
+    background: rgba(40,23,0,1.0); /* espresso color */
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: .5s; 
 } 
 
 
 /* === cappuccino === */
 
-.cap-cup-top1-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 15px 15px 0px 15px;
-  width: 220px;
-  height: 80px;
-  -webkit-border-top-right-radius: 35px;
-  -webkit-border-top-left-radius: 35px;    
-  -webkit-border-bottom-right-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
-  position: relative;
-  overflow: hidden;
+.cap-cup-top-lg {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px 15px 0px 15px;
+    width: 220px; 
+    height: 90px; 
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.cap-cup-top1-anime::before {
+.cap-cup-top-lg::before {
   content: '';
   position: absolute;
-    background:
+  background:
     radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
     radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
@@ -544,52 +540,53 @@ p {
   animation-delay: 3.5s; 
 }
 
-.cap-cup-mid1-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 0px 15px;
-  width: 220px;
-  height: 80px;
-  position: relative;
+.cap-cup-mid-md {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 60px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.cap-cup-mid1-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(255,254,235,1.0);
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: 2s; 
+.cap-cup-mid-md::before {
+    content: '';
+    position: absolute;
+    background: rgba(255,254,235,1.0);
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 2s; 
 }
 
-.cap-cup-bottom1-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 15px 15px;
-  width: 220px;
-  height: 80px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 75px;
-  -webkit-border-bottom-left-radius: 75px;
-  position: relative;
-  overflow: hidden;
+.cap-cup-bottom-lg {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 15px 15px;
+    width: 220px;
+    height: 90px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.cap-cup-bottom1-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(40,23,0,1.0); /* espresso color */
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: .5s; 
+.cap-cup-bottom-lg::before {
+    content: '';
+    position: absolute;
+    background: rgba(40,23,0,1.0); /* espresso color */
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: .5s; 
 } 
 
 /* === cafe latte === */
 
-.latte-cup-top-anime {
+.cl-cup-top-sm {
     border-style: solid;
     border-color: black;
     border-width: 15px 15px 0px 15px;
@@ -600,64 +597,60 @@ p {
     -webkit-border-bottom-right-radius: 0px;
     -webkit-border-bottom-left-radius: 0px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
-.latte-cup-top-anime::before {
-  content: '';
-  position: absolute;
-    background:
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color: none;
-    background-size: 17px 17px;
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: 3.5s; 
+.cl-cup-top-sm::before {
+    content: '';
+    position: absolute;
+      background:
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+      background-color: none;
+      background-size: 17px 17px;
+    width: 100%;
+    bottom: 0; 
+    animation: brew 3s linear forwards;
+    animation-delay: 3.5s; 
 }
 
-.latte-cup-mid-anime {
+.cl-cup-mid-xlg {
     border-style: solid;
     border-color: black;
     border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 120px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.cl-cup-mid-xlg::before {
+    content: '';
+    position: absolute;
+    background: rgba(255,254,235,1.0);/* milk */
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 2s; 
+}
+
+.cl-cup-bottom-lg {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 15px 15px;
+    width: 220px;
+    height: 90px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
-.latte-cup-mid-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(255,254,235,1.0);/* milk */
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: 2s; 
-}
-
-.latte-cup-bottom-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 15px 15px;
-  width: 220px;
-  height: 60px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 300px;
-  -webkit-border-bottom-left-radius: 300px;
-  position: relative;
-  overflow: hidden;
-}
-
-.latte-cup-bottom-anime::before {
+.cl-cup-bottom-lg::before {
   content: '';
   position: absolute;
   background: rgba(40,23,0,1.0); /* espresso color */
@@ -669,407 +662,515 @@ p {
 
 /* === flat white === */
 
-.fw-cup-top1-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 15px 15px 0px 15px;
-  width: 220px;
-  height: 80px;
-  -webkit-border-top-right-radius: 35px;
-  -webkit-border-top-left-radius: 35px;    
-  -webkit-border-bottom-right-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
-  position: relative;
-  overflow: hidden;
+.fw-cup-top-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.fw-cup-top1-anime::before {
-  content: '';
-  position: absolute;
-    background:
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color: none;
-    background-size: 17px 17px; 
-  width: 100%;
-  bottom: 0; 
-  animation: brew3 .5s linear forwards;
-  animation-delay: 3.5s; 
+.fw-cup-mid-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.fw-cup-mid1-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 0px 15px;
-  width: 220px;
-  height: 80px;
-  position: relative;
+.fw-cup-mid-sm::before {
+    content: '';
+    position: absolute;
+      background:
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+      background-color: none;
+      background-size: 17px 17px; 
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 3.5s; 
 }
 
-.fw-cup-mid1-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(255,254,235,1.0);
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: 2s; 
+.fw-cup-mid-xlg {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.fw-cup-bottom1-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 15px 15px;
-  width: 220px;
-  height: 80px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 75px;
-  -webkit-border-bottom-left-radius: 75px;
-  position: relative;
-  overflow: hidden;
+.fw-cup-mid-xlg::before {
+    content: '';
+    position: absolute;
+    background: rgba(255,254,235,1.0);
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 2s; 
 }
 
-.fw-cup-bottom1-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(40,23,0,1.0); /* espresso color */
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: .5s; 
+.fw-cup-bottom-md {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 15px 15px;
+    width: 220px;
+    height: 60px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.fw-cup-bottom-md::before {
+    content: '';
+    position: absolute;
+    background: rgba(40,23,0,1.0); /* espresso color */
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: .5s; 
 } 
 
 /* === americano === */
 
-
-.amer-cup-mid1-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 0px 15px;
-  width: 220px;
-  height: 120px;
-  position: relative;
+.am-cup-top-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.amer-cup-mid1-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(64,164,223,0.2);  
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: 2s; 
+.am-cup-mid-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.amer-cup-bottom-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 15px 15px;
-  width: 220px;
-  height: 60px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 300px;
-  -webkit-border-bottom-left-radius: 300px;
-  position: relative;
-  overflow: hidden;
+.am-cup-mid-sm::before {
+    content: '';
+    position: absolute;
+    background: rgba(64,164,223,0.2);  
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 3.5s; 
 }
 
-.amer-cup-bottom-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(40,23,0,1.0); /* espresso color */
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: .5s; 
+.am-cup-mid-xlg {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.am-cup-mid-xlg::before {
+    content: '';
+    position: absolute;
+    background: rgba(64,164,223,0.2);  
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 2s; 
+}
+
+.am-cup-bottom-md {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 15px 15px;
+    width: 220px;
+    height: 60px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.am-cup-bottom-md::before {
+    content: '';
+    position: absolute;
+    background: rgba(40,23,0,1.0); /* espresso color */
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: .5s; 
 } 
 
 /* === red eye === */
 
-
-.re-cup-mid1-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 0px 15px;
-  width: 220px;
-  height: 120px;
-  position: relative;
+.re-cup-top-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.re-cup-mid1-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(56,32,1,1.0);  
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: 2s; 
+.re-cup-mid-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.re-cup-bottom-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 15px 15px;
-  width: 220px;
-  height: 60px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 300px;
-  -webkit-border-bottom-left-radius: 300px;
-  position: relative;
-  overflow: hidden;
+.re-cup-mid-sm::before {
+    content: '';
+    position: absolute;
+    background: rgba(56,32,1,1.0);  
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 3.5s; 
 }
 
-.re-cup-bottom-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(40,23,0,1.0); /* espresso color */
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: .5s; 
+.re-cup-mid-xlg {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.re-cup-mid-xlg::before {
+    content: '';
+    position: absolute;
+    background: rgba(56,32,1,1.0);  
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 2s; 
+}
+
+.re-cup-bottom-md {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 15px 15px;
+    width: 220px;
+    height: 60px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.re-cup-bottom-md::before {
+    content: '';
+    position: absolute;
+    background: rgba(40,23,0,1.0); /* espresso color */
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: .5s; 
 } 
 
 
 /* === macchiato === */
 
 
-.mac-cup-mid-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 0px 15px;
-  width: 220px;
-  height: 120px;
-  position: relative;
+.mac-cup-top-lg {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px 15px 0px 15px;
+    width: 220px; 
+    height: 90px; 
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.mac-cup-mid-anime::before {
-content: '';
-  position: absolute;
-  background:
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color: none;
-    background-size: 17px 17px;
-  width: 100%;
-  bottom: 0; 
-  animation: brew3 1.5s linear forwards;
-  animation-delay: 2s; 
+.mac-cup-mid-md {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 60px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.mac-cup-bottom-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 15px 15px;
-  width: 220px;
-  height: 60px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 300px;
-  -webkit-border-bottom-left-radius: 300px;
-  position: relative;
-  overflow: hidden;
+.mac-cup-mid-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.mac-cup-bottom-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(40,23,0,1.0); /* espresso color */
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: .5s; 
+.mac-cup-mid-sm::before {
+    content: '';
+    position: absolute;
+    background:
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+      background-color: none;
+      background-size: 17px 17px;
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 2s; 
+}
+
+.mac-cup-bottom-md {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 15px 15px;
+    width: 220px;
+    height: 60px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.mac-cup-bottom-md::before {
+    content: '';
+    position: absolute;
+    background: rgba(40,23,0,1.0); /* espresso color */
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: .5s; 
 } 
 
 /* === cortado === */
 
-
-.cor-cup-mid-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 0px 15px;
-  width: 220px;
-  height: 60px;
-  position: relative;
+.cor-cup-top-lg {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px 15px 0px 15px;
+    width: 220px; 
+    height: 90px; 
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.cor-cup-mid-anime::before {
-content: '';
-  position: absolute;
-    background:
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color: none;
-    background-size: 17px 17px; 
-  width: 100%;
-  bottom: 0; 
-  animation: brew2 1.5s linear forwards;
-  animation-delay: 2s; 
+.cor-cup-mid-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.cor-cup-bottom-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 15px 15px;
-  width: 220px;
-  height: 60px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 300px;
-  -webkit-border-bottom-left-radius: 300px;
-  position: relative;
-  overflow: hidden;
+.cor-cup-mid-sm::before {
+    content: '';
+    position: absolute;
+      background:
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+      background-color: none;
+      background-size: 17px 17px; 
+    width: 100%;
+    bottom: 0; 
+    animation: brew1 1.5s linear forwards;
+    animation-delay: 3.5s; 
 }
 
-.cor-cup-bottom-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(40,23,0,1.0); /* espresso color */
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: .5s; 
+.cor-cup-mid-md {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 60px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.cor-cup-mid-md::before {
+    content: '';
+    position: absolute;
+    background: rgba(255,254,235,1.0);
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 2s; 
+}
+
+.cor-cup-bottom-md {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 15px 15px;
+    width: 220px;
+    height: 60px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.cor-cup-bottom-md::before {
+    content: '';
+    position: absolute;
+    background: rgba(40,23,0,1.0); /* espresso color */
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: .5s; 
 } 
 
 /* === mocha === */
 
-.moc-cup-top-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 15px 15px 0px 15px;
-  width: 220px;
-  height: 30px;
-  -webkit-border-top-right-radius: 35px;
-  -webkit-border-top-left-radius: 35px;    
-  -webkit-border-bottom-right-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
-  position: relative;
-  overflow: hidden;
+.moc-cup-top-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 15px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    -webkit-border-top-right-radius: 35px;
+    -webkit-border-top-left-radius: 35px;    
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.moc-cup-top-anime::before {
-  content: '';
-  position: absolute;
-    background:
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color: none;
-    background-size: 17px 17px; 
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1s linear forwards;
-  animation-delay: 5s; 
+.moc-cup-top-sm::before {
+    content: '';
+    position: absolute;
+      background:
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+      background-color: none;
+      background-size: 17px 17px; 
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1s linear forwards;
+    animation-delay: 5s; 
 }
 
-.moc-cup-mid1-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 0px 15px;
-  width: 220px;
-  height: 30px;
-  position: relative;
+.moc-cup-mid-sm {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.moc-cup-mid1-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(88,56,41,1.0);  
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: 3.5s; 
+.moc-cup-mid-sm::before {
+    content: '';
+    position: absolute;
+    background: rgba(88,56,41,1.0);  
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 3.5s; 
 }
 
-.moc-cup-mid2-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 0px 15px;
-  width: 220px;
-  height: 60px;
-  position: relative;
+.moc-cup-mid-lg {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 0px 15px;
+    width: 220px;
+    height: 90px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.moc-cup-mid2-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(255,254,235,1.0);  
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: 2s; 
+.moc-cup-mid-lg::before {
+    content: '';
+    position: absolute;
+    background: rgba(255,254,235,1.0);  
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: 2s; 
 }
 
-.moc-cup-mid-anime::before {
-  content: '';
-  position: absolute;
-    background:
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color: none;
-    background-size: 17px 17px;
-  width: 100%;
-  bottom: 0; 
-  animation: brew2 1.5s linear forwards;
-  animation-delay: 2s; 
+.moc-cup-bottom-lg {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 15px 15px 15px;
+    width: 220px;
+    height: 90px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;    
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
+    position: relative;
+    overflow: hidden;    
 }
 
-.moc-cup-mid-anime::before {
-content: '';
-  position: absolute;
-    background:
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color: none;
-    background-size: 17px 17px;
-  width: 100%;
-  bottom: 0; 
-  animation: brew2 1.5s linear forwards;
-  animation-delay: 2s; 
-}
-
-.moc-cup-bottom-anime {
-  border-style: solid;
-  border-color: black;
-  border-width: 0px 15px 15px 15px;
-  width: 220px;
-  height: 120px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-top-left-radius: 0px;    
-  -webkit-border-bottom-right-radius: 75px;
-  -webkit-border-bottom-left-radius: 75px;
-  position: relative;
-  overflow: hidden;
-}
-
-.moc-cup-bottom-anime::before {
-  content: '';
-  position: absolute;
-  background: rgba(40,23,0,1.0); /* espresso color */
-  width: 100%;
-  bottom: 0; 
-  animation: brew 1.5s linear forwards;
-  animation-delay: .5s; 
+.moc-cup-bottom-lg::before {
+    content: '';
+    position: absolute;
+    background: rgba(40,23,0,1.0); /* espresso color */
+    width: 100%;
+    bottom: 0; 
+    animation: brew 1.5s linear forwards;
+    animation-delay: .5s; 
 } 
 
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
@@ -1086,7 +1187,7 @@ content: '';
   }
 }
 
-@keyframes brew2 {
+@keyframes brew1 {
   0% {
     height: 0%;
   }
@@ -1096,15 +1197,6 @@ content: '';
   }
 }
 
-@keyframes brew3 {
-  0% {
-    height: 0%;
-  }
-
-  100% {
-    height: 25%;  
-  }
-}
 
 /* ====== RESPONSIVE - Phone size ====== */
 
