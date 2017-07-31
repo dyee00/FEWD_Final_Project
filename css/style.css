@@ -34,7 +34,7 @@ p {
 }
 
 #title {
-  font-family: Sanchez;
+  font-family: Fjalla One;
   font-size: 6rem;
   font-weight: normal;
   /* line-height: 10rem;
@@ -1025,7 +1025,7 @@ content: '';
 }
 
 
-/* ====== RESPONSIVE ====== */
+/* ====== RESPONSIVE phone ====== */
 
 @media screen 
   and (min-width: 300px)
@@ -1087,7 +1087,76 @@ header {
   text-align: justify;
 }
 
-.desc h2, h3 {
+.desc h2 h3 {
+  font-family: Sanchez;
+  text-align: center;
+}
+
+ };   
+
+/* ====== RESPONSIVE tablet ====== */
+
+@media screen 
+  and (min-width: 750px)
+  and (max-width: 1025px) {
+
+body {
+  font-family: Sanchez;
+}
+
+header {
+  font-family: Sanchez;
+}
+
+#title {
+  font-family: Sanchez;
+  font-size: 4rem;
+} 
+
+
+#tagline {
+  font-family: Sanchez;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+} 
+
+#coffee-cup {
+  width: 50%;
+}
+
+/* ===== Responsive Modal ===== */
+
+.previous, .next {
+  top: 49%;
+  width: auto;
+}
+
+.modal-content {
+  background-color: #D7D1C9;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 0px 20px 50px 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 70%; 
+  height: 0 auto;
+}
+
+.desc {
+  font-family: Sanchez;
+  width: 80%;
+  text-align: justify;
+}
+
+.desc h2 h3 {
   font-family: Sanchez;
   text-align: center;
 }
