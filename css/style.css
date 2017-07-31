@@ -233,7 +233,7 @@ p {
   font-size: 1.5rem;
   font-weight: normal;
   text-align: center;
-  padding: 40px 74px 60px 0px;
+  padding: 40px 74px 60px 70px;
 }
 
 /* ==== Espresso Ingredients ==== */
@@ -1064,6 +1064,14 @@ header {
   width: 70%;
 }
 
+.label {
+  font-family: Sanchez;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 40px 74px 60px 70px;
+}
+
 /* ===== Responsive Modal ===== */
 
 .previous, .next {
@@ -1130,7 +1138,15 @@ header {
 } 
 
 #coffee-cup {
-  width: 60%;
+  width: 40%;
+}
+
+.label {
+  font-family: Sanchez;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 40px 74px 60px 70px;
 }
 
 /* ===== Responsive Modal ===== */
