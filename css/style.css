@@ -1,27 +1,31 @@
 body {
   background-color: #D7D1C9;
-  width: 100%;
   font-family: Sanchez, sans-serif;
+  margin: 2%;
 }
 
 
 header {
   text-align: center; 
   padding: 1% 5% 1% 5%;
-  margin-bottom: 6%; 
+  margin-bottom: 5%; 
 }
 
 h1 {
-  /* font-size: 80px; */
-  font-size: 5em;
+  font-size: 5rem;
   font-weight: normal;
   margin-bottom: 0px;
 } 
 
 h2 {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: normal;
 } 
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
 
 p {
   width: 100%;
@@ -29,8 +33,31 @@ p {
   margin: 0;
 }
 
+#title {
+  font-family: Sanchez;
+  font-size: 6rem;
+  font-weight: normal;
+  /* line-height: 10rem;
+  letter-spacing: 0rem; */
+} 
+
+#definition {
+  font-family: Oswald;
+  font-size: 1.35rem;
+  line-height: 3rem;
+  font-weight: 100;
+}
+
 #ital {
   font-style: italic;
+}
+
+#tagline {
+  font-family: Oswald;
+  font-size: 2.5rem;
+  line-height: 5rem;
+  font-weight: normal;
+  text-transform: capitalize;
 }
 
 
@@ -58,7 +85,8 @@ p {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 330px;
+  /* width: 330px; */
+  width: 26%;
   margin: 2% 2% 2% 2%;
   cursor: pointer;
 } 
@@ -66,9 +94,9 @@ p {
 .cup-top {
     border-style: solid;
     border-color: black;
-    border-width: 20px 20px 0px 20px;
-    width: 220px;
-    height: 60px;
+    border-width: 15px 15px 0px 15px;
+    width: 220px; 
+    height: 60px; 
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
     -webkit-border-bottom-right-radius: 0px;
@@ -79,7 +107,7 @@ p {
 .cup-top-mid {
     border-style: solid;
     border-color: black;
-    border-width: 20px 20px 0px 20px;
+    border-width: 15px 15px 0px 15px;
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
     -webkit-border-bottom-right-radius: 0px;
@@ -92,7 +120,7 @@ p {
 .cup-mid {
     border-style: solid;
     border-color: black;
-    border-width: 0px 20px 0px 20px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 60px;
     position: relative;
@@ -101,7 +129,7 @@ p {
 .cup-bottom {
     border-style: solid;
     border-color: black;
-    border-width: 0px 20px 20px 20px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
@@ -114,7 +142,7 @@ p {
 .cup-top-small {
     border-style: solid;
     border-color: black;
-    border-width: 20px 20px 0px 20px;
+    border-width: 15px 15px 0px 15px;
     width: 220px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
@@ -127,7 +155,7 @@ p {
 .cup-mid-small {
     border-style: solid;
     border-color: black;
-    border-width: 0px 20px 0px 20px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 30px;
     position: relative;
@@ -137,7 +165,7 @@ p {
 .cup-top1 {
     border-style: solid;
     border-color: black;
-    border-width: 20px 20px 0px 20px;
+    border-width: 15px 15px 0px 15px;
     width: 220px;
     height: 80px;
     -webkit-border-top-right-radius: 35px;
@@ -151,7 +179,7 @@ p {
 .cup-mid1 {
     border-style: solid;
     border-color: black;
-    border-width: 0px 20px 0px 20px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 80px;
     position: relative;
@@ -160,7 +188,7 @@ p {
 .cup-bottom1 {
     border-style: solid;
     border-color: black;
-    border-width: 0px 20px 20px 20px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 80px;
     -webkit-border-top-right-radius: 0px;
@@ -173,7 +201,7 @@ p {
 .cup-bottom2 {
     border-style: solid;
     border-color: black;
-    border-width: 0px 20px 20px 20px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 120px;
     -webkit-border-top-right-radius: 0px;
@@ -185,13 +213,13 @@ p {
 
 .cup-handle {
     position: absolute;
-    left: 260px;
-    bottom: 240px;
+    left: 250px;
+    bottom: 270px;
     border-style: solid;
     border-color: black;
-    border-width: 20px 20px 20px 20px;
-    width: 50px;
-    height: 95px;
+    border-width: 15px 15px 15px 15px;
+    width: 57px;
+    height: 75px;
     -webkit-border-top-left-radius: 30px;
     -webkit-border-top-right-radius: 70px;
     -webkit-border-bottom-right-radius: 70px;
@@ -202,13 +230,13 @@ p {
 
 .label {
   font-family: Sanchez;
-  font-size: 23px;
+  font-size: 1.5rem;
   font-weight: normal;
   text-align: center;
   padding: 40px 74px 60px 0px;
 }
 
-/* ==== Ingredients ==== */
+/* ==== Espresso Ingredients ==== */
 
 .espresso-color {
     background: rgba(40,23,0,1.0);
@@ -252,7 +280,7 @@ p {
 }
 
 
-/* ==== Modal ==== */
+/* ====== Modal ====== */
  
 #modal-espresso, 
 #modal-cappuccino, 
@@ -308,7 +336,7 @@ p {
 
 .modal-close:hover,
 .modal-close:focus {
-  color: rgba(0,0,0,.5);
+  color: rgba(255,255,255,.5);
   text-decoration: none;
   cursor: pointer;  
 }
@@ -355,96 +383,17 @@ p {
 }
 
 
-
-/* ==== cup for animation ==== */ 
-
-
-.cup-top-anime {
-    border-style: solid;
-    border-color: black;
-    border-width: 20px 20px 0px 20px;
-    width: 220px;
-    height: 60px;
-    -webkit-border-top-right-radius: 35px;
-    -webkit-border-top-left-radius: 35px;    
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    position: relative;
-    overflow: hidden;
-}
-
-.cup-top-mid-anime {
-    border-style: solid;
-    border-color: black;
-    border-width: 20px 20px 0px 20px;
-    -webkit-border-top-right-radius: 35px;
-    -webkit-border-top-left-radius: 35px;    
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    width: 220px;
-    height: 120px;
-    position: relative;
-}
-
-.cup-mid-anime {
-    border-style: solid;
-    border-color: black;
-    border-width: 0px 20px 0px 20px;
-    width: 220px;
-    height: 60px;
-    -webkit-border-top-right-radius: 0px;
-    -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    position: relative;
-    overflow: hidden;
-}
-
-.cup-top-small-anime {
-    border-style: solid;
-    border-color: black;
-    border-width: 20px 20px 0px 20px;
-    width: 220px;
-    height: 26.5px;
-    -webkit-border-top-right-radius: 35px;
-    -webkit-border-top-left-radius: 35px;    
-    -webkit-border-bottom-right-radius: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    position: relative;
-}
-
-.cup-mid-small-anime {
-    border-style: solid;
-    border-color: black;
-    border-width: 0px 20px 0px 20px;
-    width: 220px;
-    height: 26.5px;
-    position: relative;
-}
-
-.cup-bottom-anime {
-    border-style: solid;
-    border-color: black;
-    border-width: 0px 20px 20px 20px;
-    width: 220px;
-    height: 60px;
-    -webkit-border-top-right-radius: 0px;
-    -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 300px;
-    -webkit-border-bottom-left-radius: 300px;
-    position: relative;
-    overflow: hidden;
-}
+/* ========= ANIMATION ========= */
 
 .cup-handle-anime {
     position: absolute;
-    left: 260px;
-    bottom: 105px;
+    left: 250px;
+    bottom: 140px;
     border-style: solid;
     border-color: black;
-    border-width: 20px 20px 20px 20px;
-    width: 50px;
-    height: 95px;
+    border-width: 15px 15px 15px 15px;
+    width: 57px;
+    height: 75px;
     -webkit-border-top-left-radius: 30px;
     -webkit-border-top-right-radius: 70px;
     -webkit-border-bottom-right-radius: 70px;
@@ -454,14 +403,12 @@ p {
 }
 
 
-/* ========= ANIMATION ========= */
-
 /* === espresso === */
 
 .esp-cup-bottom-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 20px 20px;
+  border-width: 0px 15px 15px 15px;
   width: 220px;
   height: 60px;
   -webkit-border-top-right-radius: 0px;
@@ -488,7 +435,7 @@ p {
 .cap-cup-top1-anime {
   border-style: solid;
   border-color: black;
-  border-width: 20px 20px 0px 20px;
+  border-width: 15px 15px 0px 15px;
   width: 220px;
   height: 80px;
   -webkit-border-top-right-radius: 35px;
@@ -518,7 +465,7 @@ p {
 .cap-cup-mid1-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 0px 20px;
+  border-width: 0px 15px 0px 15px;
   width: 220px;
   height: 80px;
   position: relative;
@@ -537,7 +484,7 @@ p {
 .cap-cup-bottom1-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 20px 20px;
+  border-width: 0px 15px 15px 15px;
   width: 220px;
   height: 80px;
   -webkit-border-top-right-radius: 0px;
@@ -563,7 +510,7 @@ p {
 .latte-cup-top-anime {
     border-style: solid;
     border-color: black;
-    border-width: 20px 20px 0px 20px;
+    border-width: 15px 15px 0px 15px;
     width: 220px;
     height: 60px;
     -webkit-border-top-right-radius: 35px;
@@ -593,7 +540,7 @@ p {
 .latte-cup-mid-anime {
     border-style: solid;
     border-color: black;
-    border-width: 0px 20px 0px 20px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 120px;
     -webkit-border-top-right-radius: 0px;
@@ -617,7 +564,7 @@ p {
 .latte-cup-bottom-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 20px 20px;
+  border-width: 0px 15px 15px 15px;
   width: 220px;
   height: 60px;
   -webkit-border-top-right-radius: 0px;
@@ -643,7 +590,7 @@ p {
 .fw-cup-top1-anime {
   border-style: solid;
   border-color: black;
-  border-width: 20px 20px 0px 20px;
+  border-width: 15px 15px 0px 15px;
   width: 220px;
   height: 80px;
   -webkit-border-top-right-radius: 35px;
@@ -673,7 +620,7 @@ p {
 .fw-cup-mid1-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 0px 20px;
+  border-width: 0px 15px 0px 15px;
   width: 220px;
   height: 80px;
   position: relative;
@@ -692,7 +639,7 @@ p {
 .fw-cup-bottom1-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 20px 20px;
+  border-width: 0px 15px 15px 15px;
   width: 220px;
   height: 80px;
   -webkit-border-top-right-radius: 0px;
@@ -719,7 +666,7 @@ p {
 .amer-cup-mid1-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 0px 20px;
+  border-width: 0px 15px 0px 15px;
   width: 220px;
   height: 120px;
   position: relative;
@@ -738,7 +685,7 @@ p {
 .amer-cup-bottom-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 20px 20px;
+  border-width: 0px 15px 15px 15px;
   width: 220px;
   height: 60px;
   -webkit-border-top-right-radius: 0px;
@@ -765,7 +712,7 @@ p {
 .re-cup-mid1-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 0px 20px;
+  border-width: 0px 15px 0px 15px;
   width: 220px;
   height: 120px;
   position: relative;
@@ -784,7 +731,7 @@ p {
 .re-cup-bottom-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 20px 20px;
+  border-width: 0px 15px 15px 15px;
   width: 220px;
   height: 60px;
   -webkit-border-top-right-radius: 0px;
@@ -812,7 +759,7 @@ p {
 .mac-cup-mid-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 0px 20px;
+  border-width: 0px 15px 0px 15px;
   width: 220px;
   height: 120px;
   position: relative;
@@ -837,7 +784,7 @@ content: '';
 .mac-cup-bottom-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 20px 20px;
+  border-width: 0px 15px 15px 15px;
   width: 220px;
   height: 60px;
   -webkit-border-top-right-radius: 0px;
@@ -864,7 +811,7 @@ content: '';
 .cor-cup-mid-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 0px 20px;
+  border-width: 0px 15px 0px 15px;
   width: 220px;
   height: 60px;
   position: relative;
@@ -889,7 +836,7 @@ content: '';
 .cor-cup-bottom-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 20px 20px;
+  border-width: 0px 15px 15px 15px;
   width: 220px;
   height: 60px;
   -webkit-border-top-right-radius: 0px;
@@ -915,7 +862,7 @@ content: '';
 .moc-cup-top-anime {
   border-style: solid;
   border-color: black;
-  border-width: 20px 20px 0px 20px;
+  border-width: 15px 15px 0px 15px;
   width: 220px;
   height: 30px;
   -webkit-border-top-right-radius: 35px;
@@ -945,7 +892,7 @@ content: '';
 .moc-cup-mid1-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 0px 20px;
+  border-width: 0px 15px 0px 15px;
   width: 220px;
   height: 30px;
   position: relative;
@@ -964,7 +911,7 @@ content: '';
 .moc-cup-mid2-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 0px 20px;
+  border-width: 0px 15px 0px 15px;
   width: 220px;
   height: 60px;
   position: relative;
@@ -1015,7 +962,7 @@ content: '';
 .moc-cup-bottom-anime {
   border-style: solid;
   border-color: black;
-  border-width: 0px 20px 20px 20px;
+  border-width: 0px 15px 15px 15px;
   width: 220px;
   height: 120px;
   -webkit-border-top-right-radius: 0px;
@@ -1078,7 +1025,63 @@ content: '';
 }
 
 
+/* ====== RESPONSIVE ====== */
 
+@media screen 
+  and (min-width: 300px)
+  and (max-width: 800px) {
+
+
+#title {
+  font-size: 4rem;
+} 
+
+
+#tagline {
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+} 
+
+#coffee-cup {
+  width: 70%;
+}
+
+/* ===== Modal ===== */
+
+.previous, .next {
+  top: 49%;
+  width: auto;
+}
+
+.modal-content {
+  background-color: #D7D1C9;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 0px 20px 50px 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 70%; 
+  height: 0 auto;
+}
+
+.desc {
+  width: 80%;
+  text-align: justify;
+}
+
+.desc h2, h3 {
+  text-align: center;
+}
+
+ };   
 
 
 
