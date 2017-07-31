@@ -1029,18 +1029,24 @@ content: '';
 
 @media screen 
   and (min-width: 300px)
-  and (max-width: 800px) {
+  and (max-width: 768px) {
 
-header body {
+body {
+  font-family: Sanchez, sans-serif;
+}
+
+header {
   font-family: Sanchez, sans-serif;
 }
 
 #title {
+  font-family: Sanchez, sans-serif;
   font-size: 4rem;
 } 
 
 
 #tagline {
+  font-family: Sanchez, sans-serif;
   font-size: 2rem;
 }
 
@@ -1058,7 +1064,7 @@ header body {
   width: 70%;
 }
 
-/* ===== Modal ===== */
+/* ===== Responsive Modal ===== */
 
 .previous, .next {
   top: 49%;
@@ -1076,11 +1082,13 @@ header body {
 }
 
 .desc {
+  font-family: Sanchez;
   width: 80%;
   text-align: justify;
 }
 
 .desc h2, h3 {
+  font-family: Sanchez;
   text-align: center;
 }
 
