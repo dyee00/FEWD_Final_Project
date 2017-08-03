@@ -1,0 +1,27 @@
+/*
+Font: 		Gist Rough
+Style: 		Light Two
+URL: 		https://www.youworkforthem.com/font/T5056/gist-rough
+Foundry: 	Yellow Design Studio
+Foundry: 	https://www.youworkforthem.com/designer/351/yellow-design-studio
+Copyright:	Copyright (c) 2014 by Yellow Design Studio. All rights reserved.
+Version: 	17
+Created:	June 05, 2017
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'GistRoughLightTwo';
+	src: url('gist-rough-light-two.eot');
+	src: url('gist-rough-light-two.eot?#iefix') format('embedded-opentype'),
+             url('gist-rough-light-two.woff2') format('woff2'),
+	     url('gist-rough-light-two.woff') format('woff'),
+	     url('gist-rough-light-two.ttf') format('truetype'),
+	     url('gist-rough-light-two.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

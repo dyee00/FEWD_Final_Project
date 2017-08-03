@@ -27,6 +27,17 @@ font-family: 'Fjalla One', sans-serif;
        url('../fonts/sucrose-bold-two-demo.svg#youworkforthem') format('svg');
   font-weight: normal;
   font-style: normal;
+
+  font-family: 'GistRoughLightTwo';
+  src: url('../fonts/gist-rough-light-two.eot');
+  src: url('../fonts/gist-rough-light-two.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/gist-rough-light-two.woff2') format('woff2'),
+       url('../fonts/gist-rough-light-two.woff') format('woff'),
+       url('../fonts/gist-rough-light-two.ttf') format('truetype'),
+       url('../fonts/gist-rough-light-two.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 
@@ -67,16 +78,15 @@ p {
 }
 
 #title {
-  font-family: SucroseBoldTwoDEMO;
-  /* font-family: Fjalla One; */
-  font-size: 6rem;
+  font-family: Fjalla One; 
+  font-size: 7rem;
   font-weight: normal;
   /* line-height: 10rem;
   letter-spacing: 0rem; */
 } 
 
 #definition {
-  font-family: Fjalla One;
+  font-family: Sanchez;
   font-size: 1.35rem;
   line-height: 3rem;
   font-weight: 100;
@@ -87,9 +97,9 @@ p {
 }
 
 #tagline {
-  font-family: Fjalla One;
+  font-family: Sanchez;
   font-size: 2.5rem;
-  line-height: 8rem;
+  line-height: 3rem;
   font-weight: normal;
   text-transform: capitalize;
 }
@@ -314,8 +324,8 @@ p {
     background-position: 0 0, 30px 30px; 
     */
     background: /* small polka dots */
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
-    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0px,
+    radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 7px,
     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
     background-color: none;
@@ -1197,6 +1207,16 @@ p {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /****************************************/
 /****************************************/
 /****************************************/
@@ -1207,6 +1227,10 @@ p {
 /****************************************/
 /****************************************/
 /****************************************/
+
+
+
+
 
 
 /* ======  RESPONSIVE  ====== */
@@ -1227,15 +1251,14 @@ p {
 }
 
 #title {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   padding-left: 5%;
 }   
 
 #tagline {
-  font-family: Fjalla One;
   font-size: 2.5rem;
-  line-height: 3rem;
+  line-height: 2.5rem;
   font-weight: normal;
   text-transform: capitalize;
   padding: 5% 0;
