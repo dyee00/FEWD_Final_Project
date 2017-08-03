@@ -384,10 +384,9 @@ p {
 
 /* Next & previous buttons */
 
-.previous, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%; 
+ 
+.buttons {
+  cursor: pointer; 
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -399,8 +398,14 @@ p {
 }
 
 /* Position the "next button" to the right */
+
+.previous {
+  float:left;
+  border-radius: 0 3px 3px 0;
+}
+
 .next {
-  right: 15%;
+  float: right;
   border-radius: 3px 0 0 3px;
 }
 
@@ -1218,9 +1223,8 @@ h3 {
   flex-direction: row;
   position: relative;
   width: auto;
-  padding-top: 15%;
-  /* padding-right: 19%;
-  margin: 2% 2% 2% 2%;
+  padding-top: 10%;
+  /* margin: 2% 2% 2% 2%;
   left: 10%; */
 }
 
@@ -1230,29 +1234,10 @@ h3 {
   text-align: justify;
 }
 
-
-/* Position the "previous/next button" */
-
-.previous, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 48.5%;
-  width: auto;
-  padding: 10px;
-  color: rgba(0,0,60,1);
-  font-weight: bold;
-  font-size: 30px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+.buttons {
+  padding: 10%;
 }
 
-.previous {
-  left: 12%;
-}
-
-.next {
-  right: 12%;
-}
 
 
 

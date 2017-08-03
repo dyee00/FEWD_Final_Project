@@ -125,7 +125,7 @@ window.onclick = function(event) {
         esp.style.display = "none";
     } else if (event.target == cap) {
         cap.style.display = "none";
-    } else if(event.target == cl) {
+    } else if (event.target == cl) {
         cl.style.display = "none";
     } else if (event.target == fl) {
         fl.style.display = "none";
