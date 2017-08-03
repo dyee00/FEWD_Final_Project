@@ -105,12 +105,6 @@ function showPages(n) {
 
   pages[pageIndex-1].style.display = "block";
 
-  // gestures for mobile 
-
-  $("pages").on("swipeleft",function(){
-    $(this).hide();
-  });
-
 }
 
 
