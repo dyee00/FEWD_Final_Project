@@ -105,8 +105,6 @@ function showPages(n) {
 
   pages[pageIndex-1].style.display = "block";
 
-  jQuery('#swipe').bind('swipeone',"showPages");
-
 }
 
 
