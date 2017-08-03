@@ -105,6 +105,8 @@ function showPages(n) {
 
   pages[pageIndex-1].style.display = "block";
 
+  jQuery('#swipe').bind('swipeone',"showPages");
+
 }
 
 
@@ -143,40 +145,7 @@ window.onclick = function(event) {
 }
 
 
-// hammer.js gestures
-/* 
-var hammertime = new Hammer(myElement, myOptions);
-hammertime.on('pan', function(ev) {
-  console.log(ev);
-});
 
-
-$(".espresso").click(function() {   
-  $("#modal-espresso").show("#modal-show");
-});
-
-$(".modal-close").click(function(event) {
-  $("#modal-espresso").hide("#modal-show");
-});
-*/
-
-var hammertime = new Hammer(myElement, myOptions);
-hammertime.on('pan', function(ev) {
-  console.log(ev);
-});
-
-
-$(document).ready(function() {
-
-    $(".espresso").hammer().on("swipeleft", function(){
-        $(this).show("#modal-show"); 
-    })
-
-    $(".modal-close").hammer().on("swiperight", function(){
-        $(this).hide("#modal-show"); 
-    })
-
-});
 
 
 
