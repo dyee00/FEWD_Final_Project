@@ -340,6 +340,115 @@ p {
     background: rgba(88,56,41,1.0);
 }
 
+/* ==== on hover labels ==== */
+
+.esText { /* Espresso */
+  font-family: Fjalla One;
+  font-size: 25px;
+  color: rgba(40,23,0,1.0);
+  text-align: center;
+  line-height: 6rem;
+}
+
+.esText:hover {
+  color: white;
+}
+
+.esText2 { /* Espresso */
+  font-family: Fjalla One;
+  font-size: 25px;
+  color: rgba(40,23,0,1.0);
+  text-align: center;
+  line-height: 4rem
+}
+
+.esText2:hover {
+  color: white;
+}
+
+.mkText { /* Milk */
+  font-family: Fjalla One;
+  font-size: 25px;
+  color: rgba(255,254,235,1.0); 
+  text-align: center;
+  line-height: 4rem;
+}
+
+.mkText:hover {
+  color: black;
+}
+
+.mkText2 { /* Milk */
+  font-family: Fjalla One;
+  font-size: 25px;
+  color: rgba(255,254,235,1.0); 
+  text-align: center;
+  line-height: 8rem;
+}
+
+.mkText2:hover {
+  color: black;
+}
+
+.mkText3 { /* Milk */
+  font-family: Fjalla One;
+  font-size: 25px;
+  color: rgba(255,254,235,1.0); 
+  text-align: center;
+  line-height: 6rem;
+}
+
+.mkText3:hover {
+  color: black;
+}
+
+.fmText { /* Steam Milk */
+  display: none;
+  color:black;
+  font-family: Fjalla One;
+  font-size: 25px;
+  text-align: center;
+}
+
+.fmText:hover {
+  display: inline;
+}
+
+.wText { /* water */
+  font-family: Fjalla One;
+  font-size: 25px;
+  color: rgba(64,164,223,0); 
+  text-align: center;
+  line-height: 5rem;
+}
+
+.wText:hover {
+  color: black;
+}
+
+.cfText { /* coffee */
+  font-family: Fjalla One;
+  font-size: 25px;
+  color: rgba(56,32,1,1.0); 
+  text-align: center;
+  line-height: 6rem;
+}
+
+.cfText:hover {
+  color: white;
+}
+
+.coText { /* coffee */
+  font-family: Fjalla One;
+  font-size: 25px;
+  color: rgba(88,56,41,1.0); 
+  text-align: center;
+}
+
+.coText:hover {
+  color: white;
+}
+
 
 /* ====== Modal ====== */
  
@@ -1265,12 +1374,12 @@ p {
 }
 
 h2 {
-  text-align: center;
+  text-align: left;
   font-size: 1.9rem;
 }
 
 h3 {
-  text-align: center;
+  text-align: left;
 }
 
 .animation {
@@ -1284,7 +1393,7 @@ h3 {
 .desc {
   width: auto;
   padding-left: 10%;
-  text-align: justify;
+  text-align: left;
 }
 
 .buttons {
