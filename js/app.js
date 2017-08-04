@@ -3,83 +3,83 @@ console.log("JS file works!");
 
 // ==== Modal ====
 
-$(".espresso").click(function() { 	
+$(".espresso").click(function() { 	// Modal Open
 	$("#modal-espresso").show("#modal-show");
 });
 
-$(".modal-close").click(function(event) {
+$(".modal-close").click(function(event) {  // Modal Close
 	$("#modal-espresso").hide("#modal-show");
 });
 
 
-$(".cappuccino").click(function() { 	
+$(".cappuccino").click(function() {   // Modal Open
 	$("#modal-cappuccino").show("#modal-show");
 });
 
-$(".modal-close").click(function(event) {
+$(".modal-close").click(function(event) { // Modal Close
 	$("#modal-cappuccino").hide("#modal-show");
 });
 
 
-$(".cafe-latte").click(function() { 	
+$(".cafe-latte").click(function() {   // Modal Open 	
 	$("#modal-cafe-latte").show("#modal-show");
 });
 
-$(".modal-close").click(function(event) {
+$(".modal-close").click(function(event) { // Modal Close
 	$("#modal-cafe-latte").hide("#modal-show");
 });
 
 
-$(".flat-white").click(function() { 	
+$(".flat-white").click(function() {   // Modal Open 	
 	$("#modal-flat-white").show("#modal-show");
 });
 
-$(".modal-close").click(function(event) {
+$(".modal-close").click(function(event) { // Modal Close
 	$("#modal-flat-white").hide("#modal-show");
 });
 
 
-$(".americano").click(function() { 	
+$(".americano").click(function() {  // Modal Open 	
 	$("#modal-americano").show("#modal-show");
 });
 
-$(".modal-close").click(function(event) {
+$(".modal-close").click(function(event) { // Modal Close
 	$("#modal-americano").hide("#modal-show");
 });
 
 
-$(".red-eye").click(function() { 	
+$(".red-eye").click(function() {   // Modal Open
 	$("#modal-red-eye").show("#modal-show");
 });
 
-$(".modal-close").click(function(event) {
+$(".modal-close").click(function(event) { // Modal Close
 	$("#modal-red-eye").hide("#modal-show");
 });
 
 
-$(".macchiato").click(function() { 	
+$(".macchiato").click(function() {  // Modal Open 	
 	$("#modal-macchiato").show("#modal-show");
 });
 
-$(".modal-close").click(function(event) {
+$(".modal-close").click(function(event) { // Modal Close
 	$("#modal-macchiato").hide("#modal-show");
 });
 
 
-$(".cortado").click(function() { 	
+$(".cortado").click(function() {  // Modal Open 	
 	$("#modal-cortado").show("#modal-show");
 });
 
-$(".modal-close").click(function(event) {
+$(".modal-close").click(function(event) { // Modal Close
 	$("#modal-cortado").hide("#modal-show");
 });
 
 
-$(".mocha").click(function() { 	
+$(".mocha").click(function() {  // Modal Open 	
 	$("#modal-mocha").show("#modal-show");
 });
 
-$(".modal-close").click(function(event) {
+$(".modal-close").click(function(event) { // Modal Close
 	$("#modal-mocha").hide("#modal-show");
 });
 
@@ -108,7 +108,7 @@ function showPages(n) {
 }
 
 
-// ==== closes modal on background click ====
+// ==== javascript closes modal on background click ====
 
 var esp = document.getElementById("modal-espresso");
 var cap = document.getElementById("modal-cappuccino");
@@ -142,6 +142,21 @@ window.onclick = function(event) {
     }
 }
 
+// jQuery Escape to exit modal screen
+
+$(document).keyup(function(e) {
+if (e.keyCode == 27) { 
+   esp.style.display = "none";
+   cap.style.display = "none";
+   cl.style.display = "none";
+   fl.style.display = "none";
+   amer.style.display = "none";
+   re.style.display = "none";
+   mac.style.display = "none";
+   cor.style.display = "none";
+   moc.style.display = "none";
+}
+});
 
 
 
