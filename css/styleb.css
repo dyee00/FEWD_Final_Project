@@ -1,6 +1,6 @@
 /* fonts:
 
-font-family: 'Fjalla One', serif;
+font-family: 'Sanchez', serif;
 font-family: 'Abril Fatface', cursive;
 font-family: 'Oswald', sans-serif;
 font-family: 'Fjalla One', sans-serif;
@@ -103,33 +103,20 @@ font-family: 'Fjalla One', sans-serif;
   src: local('☺'), url('../fonts/blackout_two_am-webfont.woff') format('woff'), url('ostrich-sans-inline-italic.ttf') format('truetype'), url('ostrich-sans-inline-italic.svg') format('svg');
 }
 
-
 @font-face {
-  font-family: 'Bourbon Grotesque';
-  src: url('../fonts/BourbonGrotesque-Regular+(1).otf');
+  font-family: 'Willful';
+  src: url('../fonts/Willful.otf');
 }
-
-@font-face {
-  font-family: 'Brownhill';
-  src: url('../fonts/Brownhill Script.otf');
-}
-
-@font-face {
-  font-family: 'Brownhill Script swash';
-  src: url('../fonts/Brownhill Script swash.ttf');
-}
-
-
 
 
 
 /* CSS */
 
 
-body {  
-  background-color: WHITESMOKE; 
-  /* background-color: #D7D1C9;*/
-  font-family: sanchez, sans-serif;
+body {
+  background-color: WHITESMOKE;
+  /* background-color: #D7D1C9; */
+  font-family: Sanchez, sans-serif;
   margin: 2% 0% 0% -2%;
   width: 100%;
 }
@@ -163,14 +150,45 @@ p {
 }
 
 #title {
-  font-family: Blackout Two AM; 
-  font-size: 6.5rem;
-  font-weight: lighter; 
-  line-height: 7.5rem;
+  font-family: Blackout Two AM;
+  font-size: 6.2rem;
+  /* font-weight: bold; */
+  line-height: 6rem;
   letter-spacing: 0rem; 
-  color: rgba(245,195,0,1);
-  padding: 2% 0% 9% 0%;
+  color: GOLD;
+  padding: 0% 0% 7% 0%;
 } 
+
+#solo {
+  font-family: Blackout Midnight;
+  font-size: 6rem;
+  font-weight: normal;
+  line-height: 0rem;
+  letter-spacing: 0rem;
+  position: relative;
+  left: 3%;
+  color: black;
+}
+
+#definition {
+  font-family: Sanchez;
+  font-size: 1.35rem;
+  line-height: 3rem;
+  font-weight: 100;
+}
+
+#ital {
+  font-style: italic;
+}
+
+#tagline {
+  font-family: Sanchez;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
 
 .container {
   display: flex;
@@ -186,15 +204,6 @@ p {
 
 .legend ul {
   display: inline-block;
-}
-
-
-.label {
-    font-family: Oswald;
-    font-size: 1.5rem;
-    font-weight: normal;
-    text-align: center;
-    padding: 2rem 0rem 2rem 0rem;
 }
 
 /* ==== Cup  ==== */
@@ -226,7 +235,7 @@ p {
 .cup-top-sm {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
@@ -240,7 +249,7 @@ p {
 .cup-top-md {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px; 
     height: 60px; 
     -webkit-border-top-right-radius: 35px;
@@ -254,7 +263,7 @@ p {
 .cup-top-lg {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px; 
     height: 90px; 
     -webkit-border-top-right-radius: 35px;
@@ -270,7 +279,7 @@ p {
 .cup-mid-sm {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 30px;
     position: relative;
@@ -280,7 +289,7 @@ p {
 .cup-mid-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 60px;
     position: relative;
@@ -290,7 +299,7 @@ p {
 .cup-mid-lg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 90px;
     position: relative;
@@ -300,7 +309,7 @@ p {
 .cup-mid-xlg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 120px;
     position: relative;
@@ -312,7 +321,7 @@ p {
 .cup-bottom-sm {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 30px;
     -webkit-border-top-right-radius: 0px;
@@ -326,7 +335,7 @@ p {
 .cup-bottom-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
@@ -339,7 +348,7 @@ p {
 .cup-bottom-lg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 90px;
     -webkit-border-top-right-radius: 0px;
@@ -354,11 +363,11 @@ p {
 
 .cup-handle {
     position: absolute;
-    left: 249px;
+    left: 250px;
     bottom: 225px;
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 11px 11px;
+    border-width: 15px 15px 15px 15px;
     width: 57px;
     height: 75px;
     -webkit-border-top-left-radius: 30px;
@@ -369,6 +378,13 @@ p {
     overflow: hidden;
 }
 
+.label {
+    font-family: Sanchez;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+    padding: 2rem 0rem 2rem 0rem;
+}
 
 /* ==== Espresso Ingredients ==== */
 
@@ -381,8 +397,7 @@ p {
 }
 
 .milk-color {
-    /* background: rgba(255,254,235,1.0); */
-    background: rgba(255,255,255,1.0); 
+    background: rgba(255,254,235,1.0);  
 }
 
 .water-color {
@@ -417,8 +432,8 @@ p {
 /* ==== on hover labels ==== */
 
 .esText { /* Espresso */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: sanchez;
+  font-size: 17px;
   color: rgba(255,255,255,0);
   text-align: center;
   line-height: 6rem;
@@ -434,8 +449,8 @@ p {
 }
 
 .esText2 { /* Espresso */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: sanchez;
+  font-size: 17px;
   color: rgba(255,255,255,0);
   text-align: center;
   line-height: 4rem
@@ -451,8 +466,8 @@ p {
 }
 
 .mkText { /* Milk */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: sanchez;
+  font-size: 17px;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 3.5rem;
@@ -468,8 +483,8 @@ p {
 }
 
 .mkText2 { /* Milk */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: sanchez;
+  font-size: 17px;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 7rem;
@@ -485,8 +500,8 @@ p {
 }
 
 .mkText3 { /* Milk */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: sanchez;
+  font-size: 17px;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 5rem;
@@ -502,8 +517,8 @@ p {
 }
 
 .foamText { /* Foam */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: sanchez;
+  font-size: 17px;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 6rem;
@@ -519,8 +534,8 @@ p {
 }
 
 .foamText2 { /* Foam */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: sanchez;
+  font-size: 17px;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 2rem;
@@ -537,15 +552,15 @@ p {
 
 
 .wText { /* water */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: sanchez;
+  font-size: 17px;
   color: rgba(255,255,255,0); 
   text-align: center;
   line-height: 5rem;
 }
 
 .wText:hover {
-  color: rgba(0,0,0,1); 
+  color: rgba(255,255,255,1); 
   transition:color .2s ease-out, background 2s ease-in;
     -o-transition:color .2s ease-out, background 2s ease-in;
     -ms-transition:color .2s ease-out, background 2s ease-in;
@@ -554,8 +569,8 @@ p {
 }
 
 .cfText { /* coffee */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: sanchez;
+  font-size: 17px;
   color: rgba(255,255,255,0); 
   text-align: center;
   line-height: 6rem;
@@ -571,8 +586,8 @@ p {
 }
 
 .coText { /* chocolate */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: sanchez;
+  font-size: 17px;
   color: rgba(255,255,255,0); 
   text-align: center;
   line-height: 28px;
@@ -663,7 +678,7 @@ p {
 }
 
 .desc {
-  width: 50%; 
+  width: 50%;
 } 
 
 /* Next & previous buttons */
@@ -702,11 +717,11 @@ p {
 
 .cup-handle-anime {
     position: absolute;
-    left: 247px;
-    bottom: 130px;
+    left: 250px;
+    bottom: 140px;
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 11px 11px;   
+    border-width: 15px 15px 15px 15px;   
     width: 57px;
     height: 75px;
     -webkit-border-top-left-radius: 30px;
@@ -723,7 +738,7 @@ p {
 .esp-cup-top-md {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px; 
     height: 80px; 
     -webkit-border-top-right-radius: 35px;
@@ -736,7 +751,7 @@ p {
 .esp-cup-mid-lg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 80px;
     position: relative;
@@ -745,7 +760,7 @@ p {
 .esp-cup-bottom-lg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 80px;
     -webkit-border-top-right-radius: 0px;
@@ -772,7 +787,7 @@ p {
 .cap-cup-top-lg {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px; 
     height: 90px; 
     -webkit-border-top-right-radius: 35px;
@@ -802,7 +817,7 @@ p {
 .cap-cup-mid-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 60px;
     position: relative;
@@ -822,7 +837,7 @@ p {
 .cap-cup-bottom-lg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 90px;
     -webkit-border-top-right-radius: 0px;
@@ -848,7 +863,7 @@ p {
 .cl-cup-top-sm {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
@@ -878,7 +893,7 @@ p {
 .cl-cup-mid-xlg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 120px;
     position: relative;
@@ -898,7 +913,7 @@ p {
 .cl-cup-bottom-lg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 90px;
     -webkit-border-top-right-radius: 0px;
@@ -924,7 +939,7 @@ p {
 .fw-cup-top-sm {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
@@ -938,7 +953,7 @@ p {
 .fw-cup-mid-sm {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 30px;
     position: relative;
@@ -964,7 +979,7 @@ p {
 .fw-cup-mid-xlg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 120px;
     position: relative;
@@ -984,7 +999,7 @@ p {
 .fw-cup-bottom-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
@@ -1010,7 +1025,7 @@ p {
 .am-cup-top-sm {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
@@ -1024,7 +1039,7 @@ p {
 .am-cup-mid-sm {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 30px;
     position: relative;
@@ -1044,7 +1059,7 @@ p {
 .am-cup-mid-xlg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 120px;
     position: relative;
@@ -1064,7 +1079,7 @@ p {
 .am-cup-bottom-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
@@ -1090,7 +1105,7 @@ p {
 .re-cup-top-sm {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
@@ -1104,7 +1119,7 @@ p {
 .re-cup-mid-sm {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 30px;
     position: relative;
@@ -1124,7 +1139,7 @@ p {
 .re-cup-mid-xlg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 120px;
     position: relative;
@@ -1144,7 +1159,7 @@ p {
 .re-cup-bottom-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
@@ -1172,7 +1187,7 @@ p {
 .mac-cup-top-lg {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px; 
     height: 90px; 
     -webkit-border-top-right-radius: 35px;
@@ -1186,7 +1201,7 @@ p {
 .mac-cup-mid-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 60px;
     position: relative;
@@ -1196,7 +1211,7 @@ p {
 .mac-cup-mid-sm {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 30px;
     position: relative;
@@ -1222,7 +1237,7 @@ p {
 .mac-cup-bottom-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
@@ -1248,7 +1263,7 @@ p {
 .cor-cup-top-lg {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px; 
     height: 90px; 
     -webkit-border-top-right-radius: 35px;
@@ -1262,7 +1277,7 @@ p {
 .cor-cup-mid-sm {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 30px;
     position: relative;
@@ -1288,7 +1303,7 @@ p {
 .cor-cup-mid-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 60px;
     position: relative;
@@ -1308,7 +1323,7 @@ p {
 .cor-cup-bottom-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
@@ -1334,7 +1349,7 @@ p {
 .moc-cup-top-sm {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
+    border-width: 15px 15px 0px 15px;
     width: 220px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
@@ -1364,7 +1379,7 @@ p {
 .moc-cup-mid-sm {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 30px;
     position: relative;
@@ -1384,7 +1399,7 @@ p {
 .moc-cup-mid-lg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
+    border-width: 0px 15px 0px 15px;
     width: 220px;
     height: 90px;
     position: relative;
@@ -1404,7 +1419,7 @@ p {
 .moc-cup-bottom-lg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
+    border-width: 0px 15px 15px 15px;
     width: 220px;
     height: 90px;
     -webkit-border-top-right-radius: 0px;
@@ -1487,7 +1502,7 @@ p {
 
 @media screen 
   and (min-width: 240px)
-  and (max-width: 768px) {
+  and (max-width: 375px) {
 
 .container {
   width: 100%;
@@ -1496,15 +1511,23 @@ p {
 
 #coffee-cup {
   padding: 0;
-  width: 235px;
+  width: 260px;
 }
 
 #title {
-  font-size: 350%;
+  font-size: 3.5rem;
   text-align: center;
-  padding: 10% 0% 5% 5%;
-  line-height: 4.5rem;
+  padding: 0% 0% 15% 5%;
+  line-height: 4.3rem;
 }   
+
+#tagline {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  padding: 5% 0;
+}
 
 h2 {
   text-align: left;
@@ -1520,7 +1543,7 @@ h3 {
   flex-direction: row;
   position: relative;
   width: auto;
-  padding-top: 30%;
+  padding-top: 10%;
 }
 
 .desc {
@@ -1533,11 +1556,7 @@ h3 {
   padding: 10%;
 }
 
-.modal-layout .desc {
-  width: auto;
-  padding-left: 10%;
-  text-align: left;
-}
+
 
 
 /* === Responsive Cup === */
@@ -1547,9 +1566,9 @@ h3 {
 .cup-top-sm {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
-    width: 165px;
-    height: 15px;
+    border-width: 15px 15px 0px 15px;
+    width: 180px;
+    height: 20px;
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
     -webkit-border-bottom-right-radius: 0px;
@@ -1561,9 +1580,9 @@ h3 {
 .cup-top-md {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
-    width: 165px; 
-    height: 45px; 
+    border-width: 15px 15px 0px 15px;
+    width: 180px; 
+    height: 50px; 
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
     -webkit-border-bottom-right-radius: 0px;
@@ -1575,9 +1594,9 @@ h3 {
 .cup-top-lg {
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 0px 11px;
-    width: 165px; 
-    height: 75px; 
+    border-width: 15px 15px 0px 15px;
+    width: 180px; 
+    height: 80px; 
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
     -webkit-border-bottom-right-radius: 0px;
@@ -1591,9 +1610,9 @@ h3 {
 .cup-mid-sm {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
-    width: 165px;
-    height: 15px;
+    border-width: 0px 15px 0px 15px;
+    width: 180px;
+    height: 20px;
     position: relative;
     overflow: hidden;    
 }
@@ -1601,9 +1620,9 @@ h3 {
 .cup-mid-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
-    width: 165px;
-    height: 45px;
+    border-width: 0px 15px 0px 15px;
+    width: 180px;
+    height: 50px;
     position: relative;
     overflow: hidden;    
 }
@@ -1611,9 +1630,9 @@ h3 {
 .cup-mid-lg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
-    width: 165px;
-    height: 75px;
+    border-width: 0px 15px 0px 15px;
+    width: 180px;
+    height: 80px;
     position: relative;
     overflow: hidden;    
 }
@@ -1621,9 +1640,9 @@ h3 {
 .cup-mid-xlg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 0px 11px;
-    width: 165px;
-    height: 110px;
+    border-width: 0px 15px 0px 15px;
+    width: 180px;
+    height: 115px;
     position: relative;
     overflow: hidden;    
 }
@@ -1633,9 +1652,9 @@ h3 {
 .cup-bottom-sm {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
-    width: 165px;
-    height: 15px;
+    border-width: 0px 15px 15px 15px;
+    width: 180px;
+    height: 20px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
     -webkit-border-bottom-right-radius: 75px;
@@ -1647,9 +1666,9 @@ h3 {
 .cup-bottom-md {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
-    width: 165px;
-    height: 45px;
+    border-width: 0px 15px 15px 15px;
+    width: 180px;
+    height: 50px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
     -webkit-border-bottom-right-radius: 75px;
@@ -1660,13 +1679,13 @@ h3 {
 .cup-bottom-lg {
     border-style: solid;
     border-color: black;
-    border-width: 0px 11px 11px 11px;
-    width: 165px;
-    height: 75px;
+    border-width: 0px 15px 15px 15px;
+    width: 180px;
+    height: 80px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 65px;
-    -webkit-border-bottom-left-radius: 65px;
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
     position: relative;
     overflow: hidden;    
 }
@@ -1675,13 +1694,13 @@ h3 {
 
 .cup-handle {
     position: absolute;
-    left: 193px;
+    left: 210px;
     bottom: 200px;
     border-style: solid;
     border-color: black;
-    border-width: 11px 11px 11px 11px;
-    width: 37px;
-    height: 60px;
+    border-width: 15px 15px 15px 15px;
+    width: 47px;
+    height: 70px;
     -webkit-border-top-left-radius: 30px;
     -webkit-border-top-right-radius: 70px;
     -webkit-border-bottom-right-radius: 70px;
@@ -1692,23 +1711,19 @@ h3 {
 
 
 
-
-
-
-
 /* ========= RESPONSIVE ANIMATION ========= */
 
 /* Responsive anime Handle */
 
 .cup-handle-anime {
     position: absolute;
-    left: 180px;
+    left: 190px;
     bottom: 95px;
     border-style: solid;
     border-color: black;
     border-width: 10px 10px 10px 10px;   
-    width: 30px;
-    height: 50px;
+    width: 35px;
+    height: 55px;
     -webkit-border-top-left-radius: 30px;
     -webkit-border-top-right-radius: 70px;
     -webkit-border-bottom-right-radius: 70px;
@@ -1724,7 +1739,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 10px 10px 0px 10px;
-    width: 155px; 
+    width: 165px; 
     height: 60px; 
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
@@ -1737,7 +1752,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 60px;
     position: relative;
 }
@@ -1746,12 +1761,12 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 10px 10px;
-    width: 155px;
+    width: 165px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 65px;
-    -webkit-border-bottom-left-radius: 65px;
+    -webkit-border-bottom-right-radius: 75px;
+    -webkit-border-bottom-left-radius: 75px;
     position: relative;
     overflow: hidden;
 }
@@ -1773,7 +1788,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 10px 10px 0px 10px;
-    width: 155px; 
+    width: 165px; 
     height: 70px; 
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
@@ -1803,7 +1818,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 40px;
     position: relative;
     overflow: hidden;    
@@ -1823,7 +1838,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 10px 10px;
-    width: 155px;
+    width: 165px;
     height: 70px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
@@ -1849,7 +1864,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 10px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
@@ -1879,7 +1894,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 80px;
     position: relative;
     overflow: hidden;    
@@ -1899,7 +1914,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 10px 10px;
-    width: 155px;
+    width: 165px;
     height: 70px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
@@ -1925,7 +1940,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 10px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 30px;
     -webkit-border-top-right-radius: 35 px;
     -webkit-border-top-left-radius: 35px;    
@@ -1939,7 +1954,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 10px;
     position: relative;
     overflow: hidden;    
@@ -1965,7 +1980,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 80px;
     position: relative;
     overflow: hidden;    
@@ -1985,7 +2000,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 10px 10px;
-    width: 155px;
+    width: 165px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
@@ -2011,7 +2026,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 10px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
@@ -2025,7 +2040,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 20px;
     position: relative;
     overflow: hidden;    
@@ -2045,7 +2060,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 70px;
     position: relative;
     overflow: hidden;    
@@ -2065,7 +2080,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 10px 10px;
-    width: 155px;
+    width: 165px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
@@ -2091,7 +2106,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 10px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
@@ -2105,7 +2120,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 10px;
     position: relative;
     overflow: hidden;    
@@ -2125,7 +2140,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 80px;
     position: relative;
     overflow: hidden;    
@@ -2145,7 +2160,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 10px 10px;
-    width: 155px;
+    width: 165px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
@@ -2173,7 +2188,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 10px 10px 0px 10px;
-    width: 155px; 
+    width: 165px; 
     height: 30px; 
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
@@ -2187,7 +2202,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 60px;
     position: relative;
     overflow: hidden;    
@@ -2197,7 +2212,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 30px;
     position: relative;
     overflow: hidden;    
@@ -2223,7 +2238,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 10px 10px;
-    width: 155px;
+    width: 165px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
@@ -2249,7 +2264,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 10px 10px 0px 10px;
-    width: 155px;
+    width: 165px; 
     height: 40px; 
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
@@ -2263,7 +2278,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 40px;
     position: relative;
     overflow: hidden;    
@@ -2289,7 +2304,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 40px;
     position: relative;
     overflow: hidden;    
@@ -2309,7 +2324,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 10px 10px;
-    width: 155px;
+    width: 165px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
@@ -2335,7 +2350,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 10px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 30px;
     -webkit-border-top-right-radius: 35px;
     -webkit-border-top-left-radius: 35px;    
@@ -2365,7 +2380,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 30px;
     position: relative;
     overflow: hidden;    
@@ -2385,7 +2400,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 0px 10px;
-    width: 155px;
+    width: 165px;
     height: 60px;
     position: relative;
     overflow: hidden;    
@@ -2405,7 +2420,7 @@ h3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 10px 10px 10px;
-    width: 155px;
+    width: 165px;
     height: 60px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
@@ -2433,6 +2448,26 @@ h3 {
 }
 
 };
+
+/* Responsive Landscape */
+
+@media screen 
+  and (min-width: 568px)
+  and (max-width: 736px) {
+
+
+#title {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 0% 0% 5% 5%;
+  line-height: 4.3rem;
+}   
+
+
+
+
+
+
 
 
 
