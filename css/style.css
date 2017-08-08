@@ -110,8 +110,8 @@
 }
 @font-face {
   font-family: 'Blackout Two AM';
-  src: url('../fonts/blackout_two_am-webfont.eot');
-  src: local('☺'), url('../fonts/blackout_two_am-webfont.woff') format('eot');
+  src: url('../fonts/blackout_two_am-webfont.woff');
+  src: local('☺'), url('../fonts/blackout_two_am-webfont.woff') format('woff');
 }
 
 
@@ -211,7 +211,6 @@ p {
   flex-direction: row;
   position: relative;
   width: 330px; 
-  /* width: 26%;*/
   margin: 2% 2% 3% 2%;
   cursor: pointer;
   /* border: 5px solid black; */
@@ -413,7 +412,9 @@ p {
     background: rgba(88,56,41,1.0);
 }
 
+
 /* ==== on hover labels ==== */
+
 
 .esText { /* Espresso */
   font-family: Sanchez;
