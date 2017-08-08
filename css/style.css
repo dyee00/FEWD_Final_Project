@@ -1498,7 +1498,7 @@ p {
 
 @media screen 
   and (min-width: 240px)
-  and (max-width: 768px) {
+  and (max-width: 1024px) {
 
 .container {
   width: 100%;
@@ -1542,6 +1542,21 @@ h3 {
 
 .buttons {
   padding: 10%;
+}
+
+.modal-content {
+  background-color: #D7D1C9;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 0px 20px 50px 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 70%; 
+  height: 0 auto;
+}
+
+.modal-layout {
+  width: 85%; 
+  height: 0 auto;
 }
 
 
@@ -2444,9 +2459,6 @@ h3 {
 }
 
 };
-
-
-
 
 
 
