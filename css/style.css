@@ -1,5 +1,7 @@
 /* fonts */
 
+/* PublicaSans */
+
 @font-face {
   font-family: 'PublicaSans-Regular';
   src: url('../fonts/publica-sans.eot');
@@ -11,6 +13,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* Ostrich Sans - Regular, Bold, Light, Black */
 
 @font-face {
   font-family: 'Ostrich Sans Black';
@@ -61,7 +65,7 @@
   font-style: normal;
 }
 
-/* Ostrich Sans Inline */
+/* Ostrich Sans Inline, Inline Italic */
 
 @font-face {
   font-family: 'Ostrich Sans Inline Regular';
@@ -78,7 +82,22 @@
   font-style: italic;
 }
 
-/* Blackout Font */
+
+/* Bourbon Grotesque */
+
+@font-face {
+  font-family: 'Bourbon Grotesque';
+  src: url('../fonts/BourbonGrotesque-Regular+(1).otf');
+}
+
+/* Brownhill  */
+
+@font-face {
+  font-family: 'Brownhill';
+  src: url('../fonts/Brownhill Script.otf');
+}
+
+/* Blackout - Midnight, Sunrise, Two AM */
 
 @font-face {
   font-family: 'Blackout Midnight';
@@ -96,24 +115,10 @@
   src: local('☺'), url('../fonts/blackout_two_am-webfont.woff') format('woff'), url('ostrich-sans-inline-italic.ttf') format('truetype'), url('ostrich-sans-inline-italic.svg') format('svg');
 }
 
-/* Bourbon Grotesque Font */
-
-@font-face {
-  font-family: 'Bourbon Grotesque';
-  src: url('../fonts/BourbonGrotesque-Regular+(1).otf');
-}
-
-/* Brownhill Font */
-
-@font-face {
-  font-family: 'Brownhill';
-  src: url('../fonts/Brownhill Script.otf');
-}
 
 
-
-
-
+/********************************************/
+/********************************************/
 
 
 /* CSS */
@@ -384,13 +389,6 @@ p {
 }
 
 .foam-color {
-    /*  big polka dots
-    background-color: none;
-    background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
-    radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
-    background-size: 20px 20px;
-    background-position: 0 0, 30px 30px; 
-    */
     background: /* small polka dots */
       radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 0 0px,
       radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 8px 7px,
@@ -398,6 +396,14 @@ p {
       radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
       background-color: none;
       background-size: 17px 17px;
+
+     /* big polka dots
+        background-color: none;
+        background-image: radial-gradient(rgba(255,254,235,1) 18%, transparent 23%),
+        radial-gradient(rgba(255,254,235,1) 18%, transparent 23%);
+        background-size: 20px 20px;
+        background-position: 0 0, 30px 30px; 
+        */
 } 
 
 .cream-color {
