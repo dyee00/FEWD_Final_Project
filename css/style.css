@@ -1,11 +1,4 @@
-/* fonts:
-
-font-family: 'Fjalla One', serif;
-font-family: 'Abril Fatface', cursive;
-font-family: 'Oswald', sans-serif;
-font-family: 'Fjalla One', sans-serif;
-
-*/
+/* fonts */
 
 @font-face {
   font-family: 'PublicaSans-Regular';
@@ -103,21 +96,21 @@ font-family: 'Fjalla One', sans-serif;
   src: local('☺'), url('../fonts/blackout_two_am-webfont.woff') format('woff'), url('ostrich-sans-inline-italic.ttf') format('truetype'), url('ostrich-sans-inline-italic.svg') format('svg');
 }
 
+/* Bourbon Grotesque Font */
 
 @font-face {
   font-family: 'Bourbon Grotesque';
   src: url('../fonts/BourbonGrotesque-Regular+(1).otf');
 }
 
+/* Brownhill Font */
+
 @font-face {
   font-family: 'Brownhill';
   src: url('../fonts/Brownhill Script.otf');
 }
 
-@font-face {
-  font-family: 'Brownhill Script swash';
-  src: url('../fonts/Brownhill Script swash.ttf');
-}
+
 
 
 
@@ -127,8 +120,9 @@ font-family: 'Fjalla One', sans-serif;
 
 
 body {  
-  background-color: WHITESMOKE; 
-  /* background-color: #D7D1C9;*/
+  background-color: rgba(176,161,142,1); 
+  /* background-color: WHITESMOKE; 
+  background-color: #D7D1C9;*/
   font-family: sanchez, sans-serif;
   margin: 2% 0% 0% -2%;
   width: 100%;
@@ -164,12 +158,13 @@ p {
 
 #title {
   font-family: Blackout Two AM; 
-  font-size: 6.5rem;
+  font-size: 8rem;
   font-weight: lighter; 
-  line-height: 7.5rem;
+  line-height: 5.5rem;
   letter-spacing: 0rem; 
   color: rgba(245,195,0,1);
-  padding: 2% 0% 9% 0%;
+  padding: 0% 0% 5% 0%;
+  /* background-color: rgba(38,34,22,1); */
 } 
 
 .container {
@@ -188,10 +183,9 @@ p {
   display: inline-block;
 }
 
-
-.label {
-    font-family: Oswald;
-    font-size: 1.5rem;
+.label { /* home page cup label */
+    font-family: Sanchez;
+    font-size: 1.25rem;
     font-weight: normal;
     text-align: center;
     padding: 2rem 0rem 2rem 0rem;
@@ -381,8 +375,9 @@ p {
 }
 
 .milk-color {
-    /* background: rgba(255,254,235,1.0); */
-    background: rgba(255,255,255,1.0); 
+    /* background: rgba(255,254,235,1.0);
+    background: rgba(255,255,255,1.0);  */
+    background: rgba(242,230,216,1); 
 }
 
 .water-color {
@@ -398,10 +393,10 @@ p {
     background-position: 0 0, 30px 30px; 
     */
     background: /* small polka dots */
-      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0px,
-      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 7px,
-      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+      radial-gradient(rgba(242,230,216,1) 15%, transparent 16%) 0 0px,
+      radial-gradient(rgba(242,230,216,1) 15%, transparent 16%) 8px 7px,
+      radial-gradient(rgba(242,230,216,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(242,230,216,.1) 15%, transparent 20%) 8px 9px;
       background-color: none;
       background-size: 17px 17px;
 } 
@@ -417,11 +412,12 @@ p {
 /* ==== on hover labels ==== */
 
 .esText { /* Espresso */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: Sanchez;
+  font-size: 1rem;
   color: rgba(255,255,255,0);
   text-align: center;
   line-height: 6rem;
+  letter-spacing: .1rem;
 }
 
 .esText:hover {
@@ -434,11 +430,12 @@ p {
 }
 
 .esText2 { /* Espresso */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: Sanchez;
+  font-size: 1rem;
   color: rgba(255,255,255,0);
   text-align: center;
-  line-height: 4rem
+  line-height: 4rem;
+  letter-spacing: .1rem;
 }
 
 .esText2:hover {
@@ -451,11 +448,12 @@ p {
 }
 
 .mkText { /* Milk */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: Sanchez;
+  font-size: 1rem;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 3.5rem;
+  letter-spacing: .1rem;
 }
 
 .mkText:hover {
@@ -468,11 +466,12 @@ p {
 }
 
 .mkText2 { /* Milk */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: Sanchez;
+  font-size: 1rem;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 7rem;
+  letter-spacing: .1rem;  
 }
 
 .mkText2:hover {
@@ -485,11 +484,12 @@ p {
 }
 
 .mkText3 { /* Milk */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: Sanchez;
+  font-size: 1rem;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 5rem;
+  letter-spacing: .1rem;  
 }
 
 .mkText3:hover {
@@ -502,11 +502,12 @@ p {
 }
 
 .foamText { /* Foam */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: Sanchez;
+  font-size: 1rem;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 6rem;
+  letter-spacing: .1rem;  
 }
 
 .foamText:hover {
@@ -519,11 +520,12 @@ p {
 }
 
 .foamText2 { /* Foam */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: Sanchez;
+  font-size: 1rem;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 2rem;
+  letter-spacing: .1rem;  
 }
 
 .foamText2:hover {
@@ -537,11 +539,12 @@ p {
 
 
 .wText { /* water */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: Sanchez;
+  font-size: 1rem;
   color: rgba(255,255,255,0); 
   text-align: center;
   line-height: 5rem;
+  letter-spacing: .1rem;  
 }
 
 .wText:hover {
@@ -554,11 +557,12 @@ p {
 }
 
 .cfText { /* coffee */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: Sanchez;
+  font-size: 1rem;
   color: rgba(255,255,255,0); 
   text-align: center;
   line-height: 6rem;
+  letter-spacing: .1rem;  
 }
 
 .cfText:hover {
@@ -571,11 +575,12 @@ p {
 }
 
 .coText { /* chocolate */
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: Sanchez;
+  font-size: 1rem;
   color: rgba(255,255,255,0); 
   text-align: center;
   line-height: 28px;
+  letter-spacing: .1rem;  
 }
 
 .coText:hover {
@@ -617,13 +622,14 @@ p {
   display: block; 
 }
 
+
 .modal-content {
   background-color: #D7D1C9;
   margin: 5% auto; /* 5% from the top and centered */
   padding: 0px 20px 50px 20px;
   border: 1px solid #888;
   border-radius: 20px;
-  width: 70%; 
+  width: 83%; 
   height: 0 auto;
 }
 
@@ -634,7 +640,7 @@ p {
   align-items: flex-start;
   justify-content: space-around;
   padding: 3%;
-}
+} 
 
 .modal-close {
   color: rgba(0,0,0,1);
@@ -1503,7 +1509,7 @@ p {
   font-size: 350%;
   text-align: center;
   padding: 10% 0% 5% 5%;
-  line-height: 4.5rem;
+  line-height: 1.5rem;
 }   
 
 h2 {
@@ -1520,7 +1526,7 @@ h3 {
   flex-direction: row;
   position: relative;
   width: auto;
-  padding-top: 30%;
+  padding-top: 10%;
 }
 
 .desc {
@@ -1533,11 +1539,6 @@ h3 {
   padding: 10%;
 }
 
-.modal-layout .desc {
-  width: auto;
-  padding-left: 10%;
-  text-align: left;
-}
 
 
 /* === Responsive Cup === */
@@ -1766,6 +1767,11 @@ h3 {
     animation-delay: .5s; 
 } 
 
+.esp-clearfix:before {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* === res cappuccino === */
 
@@ -2433,8 +2439,6 @@ h3 {
 }
 
 };
-
-
 
 
 
