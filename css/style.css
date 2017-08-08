@@ -97,7 +97,6 @@
 }
 
 /* Blackout - Midnight, Sunrise, Two AM */
-
 @font-face {
   font-family: 'Blackout Midnight';
   src: url('../fonts/blackout_midnight-webfont.eot');
@@ -165,10 +164,11 @@ p {
   font-size: 8rem;
   font-weight: lighter; 
   line-height: 5.5rem;
-  letter-spacing: 0rem; 
-  color: rgba(245,195,0,1);
+  color: rgba(0,0,0,1);
+  /* color: rgba(245,195,0,1); GOLD */
   padding: 0% 0% 5% 0%;
-  /* background-color: rgba(38,34,22,1); */
+  /* background-color: rgba(38,34,22,1);
+     letter-spacing: 0rem;  */
 } 
 
 .container {
