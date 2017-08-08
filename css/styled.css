@@ -1,4 +1,11 @@
-/* fonts */
+/* fonts:
+
+font-family: 'Fjalla One', serif;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+
+*/
 
 @font-face {
   font-family: 'PublicaSans-Regular';
@@ -96,21 +103,21 @@
   src: local('☺'), url('../fonts/blackout_two_am-webfont.woff') format('woff'), url('ostrich-sans-inline-italic.ttf') format('truetype'), url('ostrich-sans-inline-italic.svg') format('svg');
 }
 
-/* Bourbon Grotesque Font */
 
 @font-face {
   font-family: 'Bourbon Grotesque';
   src: url('../fonts/BourbonGrotesque-Regular+(1).otf');
 }
 
-/* Brownhill Font */
-
 @font-face {
   font-family: 'Brownhill';
   src: url('../fonts/Brownhill Script.otf');
 }
 
-
+@font-face {
+  font-family: 'Brownhill Script swash';
+  src: url('../fonts/Brownhill Script swash.ttf');
+}
 
 
 
@@ -120,19 +127,29 @@
 
 
 body {  
-  background-color: #D7D1C9; 
-  /* background-color: WHITESMOKE;
-  background-color: rgba(176,161,142,1);*/
+  background-color: rgb(176,161,142); 
+  /* background-color: WHITESMOKE; 
+  background-color: #D7D1C9;*/
   font-family: sanchez, sans-serif;
-  margin: 2% 0% 0% -2%;
+  margin: 0;
   width: 100%;
 }
 
 header {
   text-align: center; 
-  padding: 1% 5% 1% 5%;
-  margin-bottom: 5%; 
+  padding: 0;
+  margin: 0;
+  background-color: rgba(38,34,22,1);
+  width: 75.3%;  
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  flex-wrap: wrap;
+  padding: 0% 0% 0% 0%;
+} 
 
 h1 {
   font-size: 5rem;
@@ -158,22 +175,15 @@ p {
 
 #title {
   font-family: Blackout Two AM; 
-  font-size: 8rem;
-  font-weight: lighter; 
-  line-height: 5.5rem;
+  font-size: 8.465rem;
+  line-height: 1rem;
   letter-spacing: 0rem; 
   color: rgba(245,195,0,1);
-  padding: 0% 0% 5% 0%;
-  /* background-color: rgba(38,34,22,1); */
+  padding: 0% 0% 7.4% 0%;
+  margin-top: 1.5%;
+  background-color: rgba(38,34,22,1);
 } 
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-  flex-wrap: wrap;
-  padding: 0% 0% 0% 5%;
-} 
 
 .desc ul li {
   margin-left: -20px; 
@@ -184,11 +194,11 @@ p {
 }
 
 .label { /* home page cup label */
-    font-family: Sanchez;
-    font-size: 1.25rem;
+    font-family: Oswald;
+    font-size: 1.4rem;
     font-weight: normal;
     text-align: center;
-    padding: 2rem 0rem 2rem 0rem;
+    margin: 1rem 0rem 0rem 0rem;
 }
 
 /* ==== Cup  ==== */
@@ -205,13 +215,17 @@ p {
 #mocha {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   position: relative;
-  width: 330px; 
-  /* width: 26%;*/
-  margin: 2% 2% 3% 2%;
+  width: 350px;
+  height: 250px;
   cursor: pointer;
-  /* border: 5px solid black; */
+  border-style: solid;
+  border-color: rgba(0,0,0,1);
+  border-width: 3px;
+  padding-top: 2%;
 } 
+
 
 /* === Cup - total size: w:220px, h:240px ; === */
 
@@ -219,12 +233,12 @@ p {
 
 .cup-top-sm {
     border-style: solid;
-    border-color: black;
-    border-width: 11px 11px 0px 11px;
-    width: 220px;
-    height: 30px;
-    -webkit-border-top-right-radius: 35px;
-    -webkit-border-top-left-radius: 35px;    
+    border-color: rgba(0,0,0,1);
+    border-width: 5px 5px 0px 5px;
+    width: 150px;
+    height: 20px;
+    -webkit-border-top-right-radius: 30px;
+    -webkit-border-top-left-radius: 30px;    
     -webkit-border-bottom-right-radius: 0px;
     -webkit-border-bottom-left-radius: 0px;
     position: relative;
@@ -233,12 +247,12 @@ p {
 
 .cup-top-md {
     border-style: solid;
-    border-color: black;
-    border-width: 11px 11px 0px 11px;
-    width: 220px; 
-    height: 60px; 
-    -webkit-border-top-right-radius: 35px;
-    -webkit-border-top-left-radius: 35px;    
+    border-color: rgba(0,0,0,1);
+    border-width: 5px 5px 0px 5px;
+    width: 150px; 
+    height: 40px; 
+    -webkit-border-top-right-radius: 30px;
+    -webkit-border-top-left-radius: 30px;    
     -webkit-border-bottom-right-radius: 0px;
     -webkit-border-bottom-left-radius: 0px;
     position: relative;
@@ -247,12 +261,12 @@ p {
 
 .cup-top-lg {
     border-style: solid;
-    border-color: black;
-    border-width: 11px 11px 0px 11px;
-    width: 220px; 
-    height: 90px; 
-    -webkit-border-top-right-radius: 35px;
-    -webkit-border-top-left-radius: 35px;    
+    border-color: rgba(0,0,0,1);
+    border-width: 5px 5px 0px 5px;
+    width: 150px; 
+    height: 60px; 
+    -webkit-border-top-right-radius: 30px;
+    -webkit-border-top-left-radius: 30px;    
     -webkit-border-bottom-right-radius: 0px;
     -webkit-border-bottom-left-radius: 0px;
     position: relative;
@@ -263,40 +277,40 @@ p {
 
 .cup-mid-sm {
     border-style: solid;
-    border-color: black;
-    border-width: 0px 11px 0px 11px;
-    width: 220px;
-    height: 30px;
+    border-color: rgba(0,0,0,1);
+    border-width: 0px 5px 0px 5px;
+    width: 150px;
+    height: 20px;
     position: relative;
     overflow: hidden;    
 }
 
 .cup-mid-md {
     border-style: solid;
-    border-color: black;
-    border-width: 0px 11px 0px 11px;
-    width: 220px;
-    height: 60px;
+    border-color: rgba(0,0,0,1);
+    border-width: 0px 5px 0px 5px;
+    width: 150px;
+    height: 40px;
     position: relative;
     overflow: hidden;    
 }
 
 .cup-mid-lg {
     border-style: solid;
-    border-color: black;
-    border-width: 0px 11px 0px 11px;
-    width: 220px;
-    height: 90px;
+    border-color: rgba(0,0,0,1);
+    border-width: 0px 5px 0px 5px;
+    width: 150px;
+    height: 60px;
     position: relative;
     overflow: hidden;    
 }
 
 .cup-mid-xlg {
     border-style: solid;
-    border-color: black;
-    border-width: 0px 11px 0px 11px;
-    width: 220px;
-    height: 120px;
+    border-color: rgba(0,0,0,1);
+    border-width: 0px 5px 0px 5px;
+    width: 150px;
+    height: 80px;
     position: relative;
     overflow: hidden;    
 }
@@ -305,41 +319,41 @@ p {
 
 .cup-bottom-sm {
     border-style: solid;
-    border-color: black;
-    border-width: 0px 11px 11px 11px;
-    width: 220px;
-    height: 30px;
+    border-color: rgba(0,0,0,1);
+    border-width: 0px 5px 5px 5px;
+    width: 150px;
+    height: 20px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 75px;
-    -webkit-border-bottom-left-radius: 75px;
+    -webkit-border-bottom-right-radius: 50px;
+    -webkit-border-bottom-left-radius: 50px;
     position: relative;
     overflow: hidden;    
 }
 
 .cup-bottom-md {
     border-style: solid;
-    border-color: black;
-    border-width: 0px 11px 11px 11px;
-    width: 220px;
-    height: 60px;
+    border-color: rgba(0,0,0,1);
+    border-width: 0px 5px 5px 5px;
+    width: 150px;
+    height: 40px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 75px;
-    -webkit-border-bottom-left-radius: 75px;
+    -webkit-border-bottom-right-radius: 50px;
+    -webkit-border-bottom-left-radius: 50px;
     position: relative;
     overflow: hidden;    
 }
 .cup-bottom-lg {
     border-style: solid;
-    border-color: black;
-    border-width: 0px 11px 11px 11px;
-    width: 220px;
-    height: 90px;
+    border-color: rgba(0,0,0,1);
+    border-width: 0px 5px 5px 5px;
+    width: 150px;
+    height: 60px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-top-left-radius: 0px;    
-    -webkit-border-bottom-right-radius: 75px;
-    -webkit-border-bottom-left-radius: 75px;
+    -webkit-border-bottom-right-radius: 50px;
+    -webkit-border-bottom-left-radius: 50px;
     position: relative;
     overflow: hidden;    
 }
@@ -348,13 +362,13 @@ p {
 
 .cup-handle {
     position: absolute;
-    left: 249px;
-    bottom: 225px;
+    left: 265px;
+    bottom: 165px;
     border-style: solid;
-    border-color: black;
-    border-width: 11px 11px 11px 11px;
-    width: 57px;
-    height: 75px;
+    border-color: rgba(0,0,0,1);
+    border-width: 5px 5px 5px 5px;
+    width: 37px;
+    height: 55px;
     -webkit-border-top-left-radius: 30px;
     -webkit-border-top-right-radius: 70px;
     -webkit-border-bottom-right-radius: 70px;
@@ -375,8 +389,9 @@ p {
 }
 
 .milk-color {
-    background: rgba(255,255,255,1.0); 
-    /* background: rgba(242,230,216,1);  */
+    /* background: rgba(255,254,235,1.0);
+    background: rgba(255,255,255,1.0);  */
+    background: rgba(242,230,216,1); 
 }
 
 .water-color {
@@ -392,12 +407,14 @@ p {
     background-position: 0 0, 30px 30px; 
     */
     background: /* small polka dots */
-      radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 0 0px,
-      radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 8px 7px,
-      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+      radial-gradient(rgba(242,230,216,1) 15%, transparent 16%) 0 0px,
+      radial-gradient(rgba(242,230,216,1) 15%, transparent 16%) 8px 7px,
+      radial-gradient(rgba(242,230,216,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(242,230,216,.1) 15%, transparent 20%) 8px 9px;
       background-color: none;
       background-size: 17px 17px;
+
+
 } 
 
 .cream-color {
@@ -411,12 +428,11 @@ p {
 /* ==== on hover labels ==== */
 
 .esText { /* Espresso */
-  font-family: Sanchez;
-  font-size: 1rem;
+  font-family: Oswald;
+  font-size: 20px;
   color: rgba(255,255,255,0);
   text-align: center;
   line-height: 6rem;
-  letter-spacing: .1rem;
 }
 
 .esText:hover {
@@ -429,12 +445,11 @@ p {
 }
 
 .esText2 { /* Espresso */
-  font-family: Sanchez;
-  font-size: 1rem;
+  font-family: Oswald;
+  font-size: 20px;
   color: rgba(255,255,255,0);
   text-align: center;
-  line-height: 4rem;
-  letter-spacing: .1rem;
+  line-height: 4rem
 }
 
 .esText2:hover {
@@ -447,12 +462,11 @@ p {
 }
 
 .mkText { /* Milk */
-  font-family: Sanchez;
-  font-size: 1rem;
+  font-family: Oswald;
+  font-size: 20px;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 3.5rem;
-  letter-spacing: .1rem;
 }
 
 .mkText:hover {
@@ -465,12 +479,11 @@ p {
 }
 
 .mkText2 { /* Milk */
-  font-family: Sanchez;
-  font-size: 1rem;
+  font-family: Oswald;
+  font-size: 20px;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 7rem;
-  letter-spacing: .1rem;  
 }
 
 .mkText2:hover {
@@ -483,12 +496,11 @@ p {
 }
 
 .mkText3 { /* Milk */
-  font-family: Sanchez;
-  font-size: 1rem;
+  font-family: Oswald;
+  font-size: 20px;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 5rem;
-  letter-spacing: .1rem;  
 }
 
 .mkText3:hover {
@@ -501,12 +513,11 @@ p {
 }
 
 .foamText { /* Foam */
-  font-family: Sanchez;
-  font-size: 1rem;
+  font-family: Oswald;
+  font-size: 20px;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 6rem;
-  letter-spacing: .1rem;  
 }
 
 .foamText:hover {
@@ -519,12 +530,11 @@ p {
 }
 
 .foamText2 { /* Foam */
-  font-family: Sanchez;
-  font-size: 1rem;
+  font-family: Oswald;
+  font-size: 20px;
   color: rgba(0,0,0,0); 
   text-align: center;
   line-height: 2rem;
-  letter-spacing: .1rem;  
 }
 
 .foamText2:hover {
@@ -538,12 +548,11 @@ p {
 
 
 .wText { /* water */
-  font-family: Sanchez;
-  font-size: 1rem;
+  font-family: Oswald;
+  font-size: 20px;
   color: rgba(255,255,255,0); 
   text-align: center;
   line-height: 5rem;
-  letter-spacing: .1rem;  
 }
 
 .wText:hover {
@@ -556,12 +565,11 @@ p {
 }
 
 .cfText { /* coffee */
-  font-family: Sanchez;
-  font-size: 1rem;
+  font-family: Oswald;
+  font-size: 20px;
   color: rgba(255,255,255,0); 
   text-align: center;
   line-height: 6rem;
-  letter-spacing: .1rem;  
 }
 
 .cfText:hover {
@@ -574,12 +582,11 @@ p {
 }
 
 .coText { /* chocolate */
-  font-family: Sanchez;
-  font-size: 1rem;
+  font-family: Oswald;
+  font-size: 20px;
   color: rgba(255,255,255,0); 
   text-align: center;
   line-height: 28px;
-  letter-spacing: .1rem;  
 }
 
 .coText:hover {
@@ -628,7 +635,7 @@ p {
   padding: 0px 20px 50px 20px;
   border: 1px solid #888;
   border-radius: 20px;
-  width: 70%; 
+  width: 83%; 
   height: 0 auto;
 }
 
@@ -817,7 +824,7 @@ p {
 .cap-cup-mid-md::before {
     content: '';
     position: absolute;
-    background: rgba(2255,255,255,1);
+    background: rgba(255,254,235,1.0);
     width: 100%;
     bottom: 0; 
     animation: brew 1.5s linear forwards;
@@ -893,7 +900,7 @@ p {
 .cl-cup-mid-xlg::before {
     content: '';
     position: absolute;
-    background: rgba(255,255,255,1);/* milk */
+    background: rgba(255,254,235,1.0);/* milk */
     width: 100%;
     bottom: 0; 
     animation: brew 1.5s linear forwards;
@@ -954,8 +961,8 @@ p {
     content: '';
     position: absolute;
       background:
-      radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 0 0,
-      radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
       radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
       radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
       background-color: none;
@@ -979,7 +986,7 @@ p {
 .fw-cup-mid-xlg::before {
     content: '';
     position: absolute;
-    background: rgba(255,255,255,1.0);
+    background: rgba(255,254,235,1.0);
     width: 100%;
     bottom: 0; 
     animation: brew 1.5s linear forwards;
@@ -1212,8 +1219,8 @@ p {
     content: '';
     position: absolute;
     background:
-      radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 0 0,
-      radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
       radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
       radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
       background-color: none;
@@ -1278,8 +1285,8 @@ p {
     content: '';
     position: absolute;
       background:
-      radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 0 0,
-      radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
       radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
       radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
       background-color: none;
@@ -1303,7 +1310,7 @@ p {
 .cor-cup-mid-md::before {
     content: '';
     position: absolute;
-    background: rgba(255,255,255,1.0);
+    background: rgba(255,254,235,1.0);
     width: 100%;
     bottom: 0; 
     animation: brew 1.5s linear forwards;
@@ -1354,8 +1361,8 @@ p {
     content: '';
     position: absolute;
       background:
-      radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 0 0,
-      radial-gradient(rgba(255,255,255,1) 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 0 0,
+      radial-gradient(rgba(255,254,235,1) 15%, transparent 16%) 8px 8px,
       radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
       radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
       background-color: none;
@@ -1399,7 +1406,7 @@ p {
 .moc-cup-mid-lg::before {
     content: '';
     position: absolute;
-    background: rgba(255,255,255,1.0);  
+    background: rgba(255,254,235,1.0);  
     width: 100%;
     bottom: 0; 
     animation: brew 1.5s linear forwards;
@@ -1508,7 +1515,7 @@ p {
   font-size: 350%;
   text-align: center;
   padding: 10% 0% 5% 5%;
-  line-height: 1.5rem;
+  line-height: 4.5rem;
 }   
 
 h2 {
