@@ -82,7 +82,6 @@
   font-style: italic;
 }
 
-
 /* Bourbon Grotesque */
 
 @font-face {
@@ -112,7 +111,7 @@
 @font-face {
   font-family: 'Blackout Two AM';
   src: url('../fonts/blackout_two_am-webfont.eot');
-  src: local('☺'), url('../fonts/blackout_two_am-webfont.woff') format('woff'), url('ostrich-sans-inline-italic.ttf') format('truetype'), url('ostrich-sans-inline-italic.svg') format('svg');
+  src: local('☺'), url('../fonts/blackout_two_am-webfont.woff') format('eot');
 }
 
 
